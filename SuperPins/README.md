@@ -1,3 +1,5 @@
+**SuperPins**
+
 This Zen theme elevates your Experience with pinned tabs and the tab bar in general by making some UI changes.
 It increases the size of pinned tabs, adds a background color (according to your accent color set in Settings -> Look and Feel -> Theme Color) and adds some distance between the pinned tabs, resembling the favorites in Arc.
 
