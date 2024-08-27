@@ -37,7 +37,7 @@
 }
 
 
-/* Align tab bar with topbar when not in compact mode when toggled on */
+/* Align tab bar with nav bar when not in compact mode when toggled on */
 @media not (-moz-bool-pref: "zen.view.compact"){
   @media (-moz-bool-pref: "uc.tab-bar.align-with-navbar") {
     #TabsToolbar {
