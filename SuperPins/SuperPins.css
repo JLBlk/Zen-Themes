@@ -50,7 +50,7 @@
 } 
 
 /* Remove the border of the workspace button if enabled when toggled on */
-@media (-moz-bool-pref: "uc.remove-workspace-button-border"){
+@media (-moz-bool-pref: "uc.workspace-button.remove-border"){
   #zen-workspaces-button {
     border: hidden !important;
   }
