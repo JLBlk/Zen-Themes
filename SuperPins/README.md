@@ -1,6 +1,6 @@
 # SuperPins
 
-This **Zen theme** elevates your Experience with pinned tabs and the tab bar in general by making some UI changes, inspired by the favorites in Arc.
+This **Zen theme** elevates your experience with pinned tabs and the tab bar in general by making some UI changes, inspired by the favorites in Arc.
 
 ## What it does by default:
   - Increase the size of pinned tabs
