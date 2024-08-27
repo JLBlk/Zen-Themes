@@ -39,7 +39,7 @@
 
 /* Align Workspace Button with topbar when not in compact mode when toggled on */
 @media not (-moz-bool-pref: "zen.view.compact"){
-  @media (-moz-bool-pref: "uc.align-workspace-button-with-navbar") {
+  @media (-moz-bool-pref: "uc.workspace-button.align-with-navbar") {
     #TabsToolbar {
       padding-top: 0 !important;
     }
@@ -57,7 +57,7 @@
 }
 
 /* Move workspace button to the bottom if enabled when toggled on */
-@media (-moz-bool-pref: "uc.move-workspace-button"){
+@media (-moz-bool-pref: "uc.workspace-button.move-to-bottom"){
   #zen-workspaces-button {
     order: 1;
     margin-bottom: auto !important;
