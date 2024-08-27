@@ -37,7 +37,7 @@
 }
 
 
-/* Align Workspace Button with topbar when not in compact mode */
+/* Align Workspace Button with topbar when not in compact mode when toggled on */
 @media not (-moz-bool-pref: "zen.view.compact"){
   @media (-moz-bool-pref: "uc.align-workspace-button-with-navbar") {
     #TabsToolbar {
@@ -49,14 +49,14 @@
   }
 } 
 
-/* Remove the border of the workspace button if enabled */
+/* Remove the border of the workspace button if enabled when toggled on */
 @media (-moz-bool-pref: "uc.remove-workspace-button-border"){
   #zen-workspaces-button {
     border: hidden !important;
   }
 }
 
-/* Move workspace button to the bottom if enabled */
+/* Move workspace button to the bottom if enabled when toggled on */
 @media (-moz-bool-pref: "uc.move-workspace-button"){
   #zen-workspaces-button {
     order: 1;
@@ -72,10 +72,17 @@
   }
 }
 
-/* Hide seperator line above first normal tab */
+/* Hide seperator line above first normal tab when toggled on */
 @media (-moz-bool-pref: "uc.hide-seperator-line") {
   #tabbrowser-tabs:has(.tabbrowser-tab[pinned]) .tabbrowser-tab:nth-child(1 of [fadein]:not([pinned]):not([hidden])) {
 	  margin-top: 10px !important;
 	  overflow: hidden !important;
+  }
+}
+
+/* Adjust border radius of workspace button to the same as tabs when toggled on */
+@media (-moz-bool-pref: "uc.workspace-button.border-radius") {
+  #zen-workspaces-button {
+    border-radius: 10px !important;
   }
 }
