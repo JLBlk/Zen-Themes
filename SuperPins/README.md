@@ -12,7 +12,7 @@ This **Zen theme** elevates your Experience with pinned tabs and the tab bar in 
 ## Optional Features (toggle in Zen's theme settings:
   - Stop Zen from loading all pinned tabs on startup
   - Stop Zen from dimming unloaded pinned tabs
-  - Align workspace button with navbar
+  - Align tabbar with navbar
   - Remove the border of the workspace button
   - Move workspace button to the bottom of the tabbar
   - Hide seperator line between pinned tabs and normal tabs
