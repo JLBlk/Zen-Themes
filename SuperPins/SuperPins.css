@@ -1,6 +1,3 @@
-
-      @-moz-document url-prefix("chrome:") {
-        
 /* Increase size of pinned tabs */
 @media (-moz-bool-pref: "zen.tabs.vertical") {
   @media (-moz-bool-pref: "zen.view.sidebar-expanded") {
@@ -84,7 +81,3 @@
     --inactive-titlebar-opacity: 1 !important;
   }
 }
-
-
-
-      }
