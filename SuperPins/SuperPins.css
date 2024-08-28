@@ -83,3 +83,8 @@
     border-radius: 10px !important;
   }
 }
+/* Stop Zen toolbar from greying out when losing focus
+:root {
+  --inactive-titlebar-opacity: 1 !important;
+}*/
+
