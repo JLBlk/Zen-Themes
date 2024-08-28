@@ -1,3 +1,6 @@
+
+      @-moz-document url-prefix("chrome:") {
+        
 /* Increase size of pinned tabs */
 @media (-moz-bool-pref: "zen.tabs.vertical") {
   @media (-moz-bool-pref: "zen.view.sidebar-expanded") {
@@ -11,7 +14,6 @@
     }
   }
 }
-
 
 /* COLORS of pinned tabs*/
 
@@ -36,7 +38,6 @@
   background-color: color-mix(in srgb, var(--toolbarbutton-hover-background), #ffffff 5%) !important;
 }
 
-
 /* Align tab bar with nav bar when not in compact mode when toggled on */
 @media not (-moz-bool-pref: "zen.view.compact"){
   @media (-moz-bool-pref: "uc.tab-bar.align-with-navbar") {
@@ -44,7 +45,7 @@
       padding-top: 0 !important;
     }
   }
-} 
+}
 
 /* Remove the border of the workspace button if enabled when toggled on */
 @media (-moz-bool-pref: "uc.workspace-button.remove-border"){
@@ -77,14 +78,13 @@
   }
 }
 
-/* Adjust border radius of workspace button to the same as tabs when toggled on */
-@media (-moz-bool-pref: "uc.workspace-button.border-radius") {
-  #zen-workspaces-button {
-    border-radius: 10px !important;
+/* Stop Zen toolbar from greying out when losing focus */
+@media (-moz-bool-pref: "uc.zen-toolbar-opacity") {
+  :root {
+    --inactive-titlebar-opacity: 1 !important;
   }
 }
-/* Stop Zen toolbar from greying out when losing focus
-:root {
-  --inactive-titlebar-opacity: 1 !important;
-}*/
 
+
+
+      }
