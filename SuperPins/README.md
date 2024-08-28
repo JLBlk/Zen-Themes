@@ -9,7 +9,7 @@ This **Zen theme** elevates your experience with pinned tabs and the tab bar in 
 
 ![image](https://github.com/user-attachments/assets/f3c1f63a-a075-4b83-a002-d1f0914942d3)
 
-## Optional Features (toggle in Zen's theme settings:
+## Optional Features (toggle in Zen's theme settings):
   - Stop Zen from loading all pinned tabs on startup
   - Stop Zen from dimming unloaded pinned tabs
   - Align tabbar with navbar
