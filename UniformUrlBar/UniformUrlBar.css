@@ -1,0 +1,7 @@
+#urlbar {
+    border-radius: 10px !important;
+}
+
+#urlbar .urlbar-page-action, #urlbar #tracking-protection-icon-container, #urlbar:not([extend="true"]) #identity-box:not(.chromeUI) #identity-icon-box {
+	border-radius: inherit !important;
+}
