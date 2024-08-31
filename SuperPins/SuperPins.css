@@ -63,22 +63,39 @@
       overflow: hidden !important;
     }
   }
-  
+
   /* Align tab bar with nav bar when not in compact mode when toggled on */
   @media not (-moz-bool-pref: "zen.view.compact") {
     @media (-moz-bool-pref: "uc.tabs.align-with-navbar") {
-      #tabbrowser-arrowscrollbox {
-        margin-top: 0 !important;
+
+      @media not (-moz-bool-pref: "zen.themes.tabs.legacy-location") {
+        #tabbrowser-arrowscrollbox {
+          margin-top: 0 !important;
+        }
+        .scrollbox-clip > scrollbox {
+          padding-top: 0 !important;
+        }
+        .tabbrowser-tab[pinned] {
+          margin-top: calc((var(--pinned-tabs-gap) / 2) - 3px) !important;
+          margin-bottom: calc((var(--pinned-tabs-gap) / 2) + 3px) !important;
+        }
+        #tabbrowser-tabs:has(.tabbrowser-tab[pinned]) .tabbrowser-tab:nth-child(1 of [fadein]:not([pinned]):not([hidden])) {
+          margin-top: calc(var(--pinned-tabs-gap) - 3px) !important;
+        }
       }
-      .scrollbox-clip > scrollbox {
-        padding-top: 0 !important;
-      }
-      .tabbrowser-tab[pinned] {
-        margin-top: calc((var(--pinned-tabs-gap) / 2) - 3px) !important;
-        margin-bottom: calc((var(--pinned-tabs-gap) / 2) + 3px) !important;
-      }
-      #tabbrowser-tabs:has(.tabbrowser-tab[pinned]) .tabbrowser-tab:nth-child(1 of [fadein]:not([pinned]):not([hidden])) {
-        margin-top: calc(var(--pinned-tabs-gap) - 3px) !important;
+
+      @media (-moz-bool-pref: "zen.themes.tabs.legacy-location") {
+        #TabsToolbar {
+          padding-top: 0 !important;
+        }
+        @media (-moz-bool-pref: "uc.workspace-button.move-to-bottom") {
+          #tabbrowser-arrowscrollbox {
+            margin-top: 0 !important;
+          }
+          .scrollbox-clip > scrollbox {
+            padding-top: 0 !important;
+          }
+        }
       }
     }
   }
