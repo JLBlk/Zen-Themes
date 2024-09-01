@@ -29,13 +29,14 @@
 
   /* Center all tabs and Workspace Button when tab bar expanded when toggled */
   @media (-moz-bool-pref: "uc.tabs.centered") {
-    @media (-moz-bool-pref: "zen.view.sidebar-expanded") {
-      .tabbrowser-tab {
-        margin-left: 2px !important;
-      }
-      
-      #zen-workspaces-button {
-        margin-left: 4px !important;
+    @media not (-moz-bool-pref: "zen.view.compact") {
+      @media (-moz-bool-pref: "zen.view.sidebar-expanded") {
+        .tabbrowser-tab {
+          margin-left: 2px !important;
+        }
+        #zen-workspaces-button {
+          margin-left: 4px !important;
+        }
       }
     }
   }
