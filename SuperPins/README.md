@@ -20,4 +20,4 @@ This **Zen theme** elevates your experience with pinned tabs and the tab bar in 
   - Move workspace button to the bottom of the tabbar
   - Hide seperator line between pinned tabs and normal tabs
   - Taller pinned tabs
-  - Compact mode for the pins
+  - Compact mode for pinned tabs
