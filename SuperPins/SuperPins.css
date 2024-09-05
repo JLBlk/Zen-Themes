@@ -31,8 +31,8 @@
   }
   
   /* Make new tabs button transparen */
-  @media (-moz-bool-pref: "uc.new-tab-button.transparent"):not(:hover) {
-    #vertical-tabs-newtab-button {
+  @media (-moz-bool-pref: "uc.new-tab-button.transparent") {
+    #vertical-tabs-newtab-button:not(:hover) {
       background-color: transparent !important;
     }
   }
