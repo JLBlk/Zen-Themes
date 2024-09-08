@@ -1,0 +1,29 @@
+/* Adjust border radius of url bar and its elements */
+
+/* @media (-moz-bool-pref: "uc.supergradient.color.top-right") {
+  --color-top-right: 
+}
+@media not (-moz-bool-pref: "uc.supergradient.color.top-right") {
+  --color-top-right: 
+}
+
+@media (-moz-bool-pref: "uc.supergradient.color.top-left") {
+  --color-top-left: 
+}
+@media not (-moz-bool-pref: "uc.supergradient.color.top-left") {
+  --color-top-left: 
+}
+
+@media (-moz-bool-pref: "uc.supergradient.color.bottom-left") {
+  --color-bottom-left: 
+}
+@media not (-moz-bool-pref: "uc.supergradient.color.bottom-left") {
+  --color-bottom-left: 
+} */
+
+
+/* 1. Top-left; 2. Bottom-left; 3. Top-right'ish 4. Bottom-right*/ 
+
+:root {
+  --zen-main-browser-background: radial-gradient(circle at top left, hsl(15, 80%, 55%), hsl(30, 70%, 60%), hsl(50, 65%, 60%), hsl(55, 80%, 30%)) !important;
+}
