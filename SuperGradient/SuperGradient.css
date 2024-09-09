@@ -145,9 +145,17 @@
 }
 
 /* Applies the color gradient based on the set user preferences */
-:root {
-  --zen-main-browser-background: radial-gradient(var(--gradient-start), var(--gradient-color1), var(--gradient-color2), var(--gradient-color3), var(--gradient-color4)) !important;
-  --toolbarbutton-hover-background: var(--custom-accent-color) !important;
+@media (-moz-bool-pref: "uc.supergradient.preset1"), (-moz-bool-pref: "uc.supergradient.preset2"), (-moz-bool-pref: "uc.supergradient.preset3"), (-moz-bool-pref: "uc.supergradient.preset4"), (-moz-bool-pref: "uc.supergradient.preset5") {
+  :root {
+    --zen-main-browser-background: radial-gradient(var(--gradient-start), var(--gradient-color1), var(--gradient-color2), var(--gradient-color3), var(--gradient-color4)) !important;
+    --toolbarbutton-hover-background: var(--custom-accent-color) !important;
+  }
+  /* Make the colors work in Compact Mode */
+  @media (-moz-bool-pref: "zen.view.compact"), (-moz-bool-pref: "zen.view.compact") and (-moz-bool-pref: "zen.view.compact.hide-toolbar") {
+    #titlebar, #zen-appcontent-navbar-container {
+      background: radial-gradient(var(--gradient-start), var(--gradient-color1), var(--gradient-color2), var(--gradient-color3), var(--gradient-color4)) !important;
+    }
+  }
 }
 
 /* Use the set accent color instead of adjusted ones (when toggled) */
