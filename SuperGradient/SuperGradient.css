@@ -10,7 +10,7 @@
   }
 }
 
-/* Control lightness of colors */
+/* Control lightness of colors based on pref and dark/white mode*/
 @media (prefers-color-scheme: dark) {
   @media (-moz-bool-pref: "uc.supergradient.brighten") {
     :root {
@@ -52,11 +52,9 @@
   }
 }
 
-
 /* SuperGradient Presets */
 
 /* 1. Top-left; 2. Bottom-left; 3. Top-right'ish 4. Bottom-right*/ 
-
 
 @media (-moz-bool-pref: "uc.supergradient.preset1") {
   :root {
