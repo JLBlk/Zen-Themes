@@ -1,0 +1,11 @@
+{
+    "uc.supergradient.preset1": "uc.supergradient.preset1",
+    "uc.supergradient.preset2": "Increases the height of pinned tabs (Disabled when tab bar not expanded)",
+    "uc.supergradient.preset3": "Decreases the gap between pinned tabs",
+    "uc.supergradient.preset4": "Only shows loaded tabs when the tab bar is collapsed",
+    "uc.supergradient.preset5": "Only shows loaded tabs when the tab bar is collapsed, except when hovering over them (Only works with the above option enabled!)",
+    "uc.supergradient.brighten": "Makes the colors of pinned tabs pop more",
+    "uc.supergradient.desaturate": "Disables the background color of pinned tabs",
+    "uc.supergradient.use-accent-color": "Uses Zen's accent colors (e.g. on tabs, set in Zen's Look and Feel setting) instead of accent colors optimized for the gradient",
+    "uc.supergradient.switch-colors": "Switches the colors of the gradient"
+}
