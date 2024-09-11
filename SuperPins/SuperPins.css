@@ -79,8 +79,8 @@
     }
   }
   
-  /* Make pinned tabs look more boxy */
-  @media (-moz-bool-pref: "uc.pins.boxy-corners") {
+  /* Make pinned tabs look more box like */
+  @media (-moz-bool-pref: "uc.pins.box-like-corners") {
     .tabbrowser-tab[pinned] {
       border-radius: 5px !important;
     }
