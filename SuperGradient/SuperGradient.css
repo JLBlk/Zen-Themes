@@ -12,13 +12,13 @@
 
 /* Control lightness of colors */
 @media (prefers-color-scheme: dark) {
-  @media (-moz-bool-pref: "uc.supergradient.brighten") {
+  @media (-moz-bool-pref: "uc.supergradient.subtle") {
     :root {
-      --lightness: 16%;
+      --lightness: 10%;
       --accent-color-lightness: 30%;
     }
   }
-  @media not (-moz-bool-pref: "uc.supergradient.brighten") {
+  @media not (-moz-bool-pref: "uc.supergradient.subtle") {
     :root {
       --lightness: 12%;
       --accent-color-lightness: 30%;
@@ -26,13 +26,13 @@
   }
 } 
 @media (prefers-color-scheme: light) {
-  @media (-moz-bool-pref: "uc.supergradient.brighten") {
+  @media (-moz-bool-pref: "uc.supergradient.subtle") {
     :root {
       --lightness: 85%;
       --accent-color-lightness: 70%;
     }
   }
-  @media not (-moz-bool-pref: "uc.supergradient.brighten") {
+  @media not (-moz-bool-pref: "uc.supergradient.subtle") {
     :root {
       --lightness: 80%;
       --accent-color-lightness: 70%;

@@ -14,7 +14,7 @@ It automatically adapts to light or dark mode, adjusts the accent color to the g
   - "Midnight Majesty": A yellow-purple'ish gradient
 
 ## Optional Features (toggle in Zen's theme settings):
-  - Brighten the colors of the gradient
-  - Desaturate the colors of the gradient
+  - Make the gradient more subtle
+  - Desaturate the colors of the gradient-
   - Use Zen's accent colors (e.g. on tabs, set in Zen's "Look and Feel" setting) instead of accent colors adjusted for the gradient
   - Switch the colors order in the gradient
