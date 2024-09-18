@@ -2,7 +2,7 @@
 
 A personal collection of my CSS Themes 🎨 for the [Zen Browser](https://zen-browser.app/).
 
-## Currently there are 2 Themes available to be installed through [Zen's website](https://zen-browser.app/themes):
+## Currently there are 3 Themes available to be installed through [Zen's website](https://zen-browser.app/themes):
   - [**SuperPins**](https://zen-browser.app/themes/ad97bb70-0066-4e42-9b5f-173a5e42c6fc)
 
 ![image](https://github.com/user-attachments/assets/ca671bae-590a-4ab8-9da5-13dab1369da7)
@@ -11,7 +11,7 @@ A personal collection of my CSS Themes 🎨 for the [Zen Browser](https://zen-br
 
 ![image](https://github.com/user-attachments/assets/f6a88964-98b3-460b-8fe9-bee5775b73ec)
 
-  - [**SuperGradient**](https://github.com/JLBlk/Zen-Themes/tree/main/SuperGradient) (Coming Soon!)
+  - [**SuperGradient**](https://github.com/JLBlk/Zen-Themes/tree/main/SuperGradient)
 
 ![image](https://github.com/user-attachments/assets/bd3053dd-c95c-4401-9f24-5f7bd9100223)
 
