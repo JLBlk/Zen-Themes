@@ -8,3 +8,8 @@
   - Center url text
   - Remove the border of the url bar
   - Blur the background when the url bar is in focus
+  - Hide icons inside the url bar:
+    - Zoom icon
+    - Shield icon
+    - Bookmark (Star) icon
+    - Reader-Mode icon
