@@ -11,7 +11,7 @@ A personal collection of my CSS Themes 🎨 for the [Zen Browser](https://zen-br
 
 ![image](https://github.com/user-attachments/assets/f6a88964-98b3-460b-8fe9-bee5775b73ec)
 
-  - [**SuperGradient**](https://github.com/JLBlk/Zen-Themes/tree/main/SuperGradient)
+  - [**SuperGradient**](https://zen-browser.app/themes/af7ee14f-e9d4-4806-8438-c59b02b77715)
 
 ![image](https://github.com/user-attachments/assets/bd3053dd-c95c-4401-9f24-5f7bd9100223)
 
