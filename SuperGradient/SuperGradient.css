@@ -10,52 +10,6 @@
   }
 }
 
-/* Control lightness of colors */
-@media (prefers-color-scheme: dark) {
-  :root:has(#theme-SuperGradient[theme-supergradient-intensity="ReallySubtle"]) {
-    --lightness: 7%;
-    --accent-color-lightness: 22%;
-  }
-  :root:has(#theme-SuperGradient[theme-supergradient-intensity="RatherSubtle"]) {
-    --lightness: 9%;
-    --accent-color-lightness: 26%;
-  }
-  :root:has(#theme-SuperGradient[theme-supergradient-intensity="Normal"]) {
-    --lightness: 12%;
-    --accent-color-lightness: 30%;
-  }
-  :root:has(#theme-SuperGradient[theme-supergradient-intensity="RatherIntense"]) {
-    --lightness: 14%;
-    --accent-color-lightness: 34%;
-  }
-  :root:has(#theme-SuperGradient[theme-supergradient-intensity="ReallyIntense"]) {
-    --lightness: 16%;
-    --accent-color-lightness: 38%;
-  }
-} 
-@media (prefers-color-scheme: light) {
-  :root:has(#theme-SuperGradient[theme-supergradient-intensity="ReallySubtle"]) {
-    --lightness: 88%;
-    --accent-color-lightness: 70%;
-  }
-  :root:has(#theme-SuperGradient[theme-supergradient-intensity="RatherSubtle"]) {
-    --lightness: 84%;
-    --accent-color-lightness: 67%;
-  }
-  :root:has(#theme-SuperGradient[theme-supergradient-intensity="Normal"]) {
-    --lightness: 80%;
-    --accent-color-lightness: 63%;
-  }
-  :root:has(#theme-SuperGradient[theme-supergradient-intensity="RatherIntense"]) {
-    --lightness: 76%;
-    --accent-color-lightness: 58%;
-  }
-  :root:has(#theme-SuperGradient[theme-supergradient-intensity="ReallyIntense"]) {
-    --lightness: 72%;
-    --accent-color-lightness: 50%;
-  }
-}
-
 /* Control saturation of colors */
 @media (-moz-bool-pref: "uc.supergradient.desaturate") {
   :root {
@@ -64,7 +18,53 @@
 }
 @media not (-moz-bool-pref: "uc.supergradient.desaturate") {
   :root {
-    --saturation: 75%;
+    --saturation: 80%;
+  }
+}
+
+/* Control lightness of colors/intensity of the gradient */
+@media (prefers-color-scheme: dark) {
+  :root:has(#theme-SuperGradient[theme-supergradient-intensity="ReallySubtle"]) {
+    --lightness: 7%;
+    --accent-color-lightness: 36%;
+  }
+  :root:has(#theme-SuperGradient[theme-supergradient-intensity="RatherSubtle"]) {
+    --lightness: 9%;
+    --accent-color-lightness: 38%;
+  }
+  :root:has(#theme-SuperGradient[theme-supergradient-intensity="Normal"]) {
+    --lightness: 12%;
+    --accent-color-lightness: 40%;
+  }
+  :root:has(#theme-SuperGradient[theme-supergradient-intensity="RatherIntense"]) {
+    --lightness: 14%;
+    --accent-color-lightness: 44%;
+  }
+  :root:has(#theme-SuperGradient[theme-supergradient-intensity="ReallyIntense"]) {
+    --lightness: 16%;
+    --accent-color-lightness: 48%;
+  }
+} 
+@media (prefers-color-scheme: light) {
+  :root:has(#theme-SuperGradient[theme-supergradient-intensity="ReallySubtle"]) {
+    --lightness: 90%;
+    --accent-color-lightness: 66%;
+  }
+  :root:has(#theme-SuperGradient[theme-supergradient-intensity="RatherSubtle"]) {
+    --lightness: 85%;
+    --accent-color-lightness: 62%;
+  }
+  :root:has(#theme-SuperGradient[theme-supergradient-intensity="Normal"]) {
+    --lightness: 80%;
+    --accent-color-lightness: 58%;
+  }
+  :root:has(#theme-SuperGradient[theme-supergradient-intensity="RatherIntense"]) {
+    --lightness: 75%;
+    --accent-color-lightness: 54%;
+  }
+  :root:has(#theme-SuperGradient[theme-supergradient-intensity="ReallyIntense"]) {
+    --lightness: 70%;
+    --accent-color-lightness: 50%;
   }
 }
 
@@ -137,6 +137,19 @@
   --switched-accent-color: hsla(310, 50%, var(--accent-color-lightness), 0.4);
 }
 
+:root:has(#theme-SuperGradient[theme-supergradient-preset="CustomGradient"]) {
+  --gradient-color1: var(--uc-supergradient-custom-colors-1);
+  --gradient-color2: var(--uc-supergradient-custom-colors-2);
+  --gradient-color3: var(--uc-supergradient-custom-colors-3);
+  --gradient-color4: var(--uc-supergradient-custom-colors-4);
+  --switched-color1: var(--uc-supergradient-custom-colors-2);
+  --switched-color2: var(--uc-supergradient-custom-colors-1);
+  --switched-color3: var(--uc-supergradient-custom-colors-4);
+  --switched-color4: var(--uc-supergradient-custom-colors-3);
+  --custom-accent-color: light-dark(color-mix(in srgb, var(--uc-supergradient-custom-colors-1) 85%, black 15%),color-mix(in srgb, var(--uc-supergradient-custom-colors-1) 85%, white 15%));
+  --switched-accent-color: light-dark(color-mix(in srgb, var(--uc-supergradient-custom-colors-2) 85%, black 15%),color-mix(in srgb, var(--uc-supergradient-custom-colors-2) 85%, white 15%));
+}
+
 /* Switch the colors in the gradient (when toggled) */
 @media (-moz-bool-pref: "uc.supergradient.switch-colors") {
   :root {
@@ -151,6 +164,20 @@
 /* Applies the color gradient based on the set user preferences */
 :root {
   --zen-colors-tertiary: radial-gradient(var(--gradient-start), var(--gradient-color1), var(--gradient-color2), var(--gradient-color3), var(--gradient-color4)) !important;
+}
+
+/* Make gradient work when "Expand on hover" is enabled */
+@media (-moz-bool-pref: "zen.view.sidebar-expanded") and (-moz-bool-pref: "zen.view.sidebar-expanded.on-hover") {
+  #navigator-toolbox:is(
+    #navigator-toolbox[zen-user-hover="true"]:hover,
+    #navigator-toolbox[zen-user-hover="true"]:focus-within,
+    #mainPopupSet[zen-user-hover="true"]:has(> #appMenu-popup:hover) ~ toolbox,
+    #navigator-toolbox[zen-user-hover="true"]:has(*[open="true"]:not(tab):not(#zen-sidepanel-button)), 
+    :not([zen-user-hover="true"])) {
+      #TabsToolbar {
+        background: radial-gradient(var(--gradient-start), var(--gradient-color1), var(--gradient-color2), var(--gradient-color3), var(--gradient-color4)) !important;
+      }
+  }
 }
 
 /* Use custom accent colors adjusted to the gradient (unless toggled, which uses zen's accent color) */
@@ -178,21 +205,84 @@
   }
 }
 
-/* Make gradient work when "Expand on hover" is enabled */
-@media (-moz-bool-pref: "zen.view.sidebar-expanded") and (-moz-bool-pref: "zen.view.sidebar-expanded.on-hover") {
-  #navigator-toolbox:is(
-    #navigator-toolbox[zen-user-hover="true"]:hover,
-    #navigator-toolbox[zen-user-hover="true"]:focus-within,
-    #mainPopupSet[zen-user-hover="true"]:has(> #appMenu-popup:hover) ~ toolbox,
-    #navigator-toolbox[zen-user-hover="true"]:has(*[open="true"]:not(tab):not(#zen-sidepanel-button)), 
-    :not([zen-user-hover="true"])) {
-      #TabsToolbar {
-        background: radial-gradient(var(--gradient-start), var(--gradient-color1), var(--gradient-color2), var(--gradient-color3), var(--gradient-color4)) !important;
+/* This creates the Film Grain Effect */
+@media (prefers-color-scheme: dark) {
+  /* Textures: 3%, 5% and 8% Opacity and white on black */
+  :root:has(#theme-SuperGradient[theme-supergradient-film-grain-intensity="Subtle"]) {
+    #browser {
+      background-image: url("https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperGradient/Film-Grain%20Textures/dark-subtle.png") !important;
+    }
+  }
+  :root:has(#theme-SuperGradient[theme-supergradient-film-grain-intensity="Normal"]) {
+    #browser {
+      background-image: url("https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperGradient/Film-Grain%20Textures/dark-normal.png") !important;
+    }
+  }
+  :root:has(#theme-SuperGradient[theme-supergradient-film-grain-intensity="Intense"]) {
+    #browser {
+      background-image: url("https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperGradient/Film-Grain%20Textures/dark-intense.png") !important;
+    }
+  }
+}
+@media (prefers-color-scheme: light) {
+  /* 3%, 6% and 9% Opacity and black on white*/
+   :root:has(#theme-SuperGradient[theme-supergradient-film-grain-intensity="Subtle"]) {
+    #browser {
+      background-image: url("https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperGradient/Film-Grain%20Textures/light-subtle.png") !important;
+     }
+  }
+  :root:has(#theme-SuperGradient[theme-supergradient-film-grain-intensity="Normal"]) {
+    #browser {
+      background-image: url("https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperGradient/Film-Grain%20Textures/light-normal.png") !important;
+    }
+  }
+  :root:has(#theme-SuperGradient[theme-supergradient-film-grain-intensity="Intense"]) {
+    #browser {
+      background-image: url("https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperGradient/Film-Grain%20Textures/light-intense.png") !important;
+    }
+  }
+}
+/* Makes the Film Grain Effect work in compact mode as well */
+@media (-moz-bool-pref: "zen.view.compact") {
+  @media (prefers-color-scheme: dark) {
+    /* Textures: 3%, 5% and 8% Opacity and white on black */
+    :root:has(#theme-SuperGradient[theme-supergradient-film-grain-intensity="Subtle"]) {
+      #TabsToolbar, #nav-bar {
+        background-image: url("https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperGradient/Film-Grain%20Textures/dark-subtle.png") !important;
       }
+    }
+    :root:has(#theme-SuperGradient[theme-supergradient-film-grain-intensity="Normal"]) {
+      #TabsToolbar, #nav-bar {
+        background-image: url("https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperGradient/Film-Grain%20Textures/dark-normal.png") !important;
+      }
+    }
+    :root:has(#theme-SuperGradient[theme-supergradient-film-grain-intensity="Intense"]) {
+       #TabsToolbar, #nav-bar {
+        background-image: url("https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperGradient/Film-Grain%20Textures/dark-intense.png") !important;
+      }
+    }
+  }
+  @media (prefers-color-scheme: light) {
+    /* 3%, 6% and 9% Opacity and black on white*/
+     :root:has(#theme-SuperGradient[theme-supergradient-film-grain-intensity="Subtle"]) {
+      #TabsToolbar, #nav-bar {
+        background-image: url("https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperGradient/Film-Grain%20Textures/light-subtle.png") !important;
+       }
+    }
+    :root:has(#theme-SuperGradient[theme-supergradient-film-grain-intensity="Normal"]) {
+      #TabsToolbar, #nav-bar {
+        background-image: url("https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperGradient/Film-Grain%20Textures/light-subtle.png") !important;
+      }
+    }
+    :root:has(#theme-SuperGradient[theme-supergradient-film-grain-intensity="Intense"]) {
+      #TabsToolbar, #nav-bar {
+        background-image: url("https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperGradient/Film-Grain%20Textures/light-subtle.png") !important;
+      }
+    }
   }
 }
 
-/* This fixes the corners of the browser content not being clean*/
+/* This fixes the corners of the browser content */
 :root:not([inDOMFullscreen='true']):not([chromehidden~='location']):not([chromehidden~='toolbar']) {
   & #tabbrowser-tabbox #tabbrowser-tabpanels .browserSidebarContainer {
     overflow: hidden;
