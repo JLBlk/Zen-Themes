@@ -14,7 +14,7 @@ assignees: ''
 **Affected Theme Settings**
 - x
 
-**Zen Version**: 
+**Zen Version**: e.g "1.0.1-a.2"
 
 **Describe the bug**
 A clear and concise description of what the bug is.
