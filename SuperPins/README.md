@@ -1,6 +1,6 @@
 # SuperPins
 
-This **Zen theme** elevates your experience with pinned tabs and the tab bar in general by making some UI changes, inspired by the favorites in Arc.
+This **Zen Mod** elevates your experience with pinned tabs and the tab bar in general by making some UI changes.
 
 ![image](https://github.com/user-attachments/assets/ca671bae-590a-4ab8-9da5-13dab1369da7)
 
@@ -8,7 +8,7 @@ This **Zen theme** elevates your experience with pinned tabs and the tab bar in 
   - Increases the width of pinned tabs (This can be toggled off)
   - Adds a universal gap between the pinned tabs (Gap size can be controlled)
 
-## Optional Features (toggle in Zen's theme settings):
+## Optional Features (toggle in Zen's Mod settings):
   - Taller pinned tabs
   - Controllable Margins between pinned tabs (5px or 10px)
   - Box like corners for pinned tabs (less rounded corners)
