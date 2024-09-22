@@ -13,3 +13,4 @@
     - Shield icon
     - Bookmark (Star) icon
     - Reader-Mode icon
+    - PiP icon
