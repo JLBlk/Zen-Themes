@@ -12,6 +12,7 @@ It automatically adapts to light or dark mode, adjusts the accent color to the g
   - "Amethyst Claret": A blue/purple-red'ish gradient (Depicted in the picture)
   - "Olive Sunset": A green-red'ish gradient
   - "Midnight Majesty": A yellow-purple'ish gradient
+  - "Zen Galaxy/Dream Legacy Theme"
   - Custom Colors: Use your own colors to created your very own personal SuperGradient!
 
 ## Optional Features (toggle in Zen's Mods settings):
