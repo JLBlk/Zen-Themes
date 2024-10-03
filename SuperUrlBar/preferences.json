@@ -57,6 +57,17 @@
         ]
     },
     {
+        "property": "uc.urlbar.custom-bg-color.checkbox",
+        "label": "Enable Custom Colors for the Url Bar",
+        "type": "checkbox"
+    },
+    {
+        "property": "uc.urlbar.custom-bg-color",
+        "label": "Custom Color for the Url Bar",
+        "placeholder": "Enter Color Code",
+        "type": "string"
+    },
+    {
         "property": "uc.urlbar.icon.zoom.removed",
         "label": "Hides the Zoom icon",
         "type": "checkbox",

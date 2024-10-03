@@ -46,7 +46,7 @@
 :root:has(#theme-Super-Url-Bar[uc-urlbar-blur-intensity="Normal"]) {
   --blur-intensity: 2px;
 }
-:root:has(#theme-Super-Url-Bar[uc-urlbar-blur-intensity="RahterStrong"]) {
+:root:has(#theme-Super-Url-Bar[uc-urlbar-blur-intensity="RatherStrong"]) {
   --blur-intensity: 3px;
 }
 :root:has(#theme-Super-Url-Bar[uc-urlbar-blur-intensity="Strong"]) {
@@ -84,7 +84,12 @@
   }
 }
 
-/* --zen-urlbar-background for future color change feature */
+@media (-moz-bool-pref: "uc.urlbar.custom-bg-color.checkbox") {
+  :root {
+    --zen-urlbar-background: var(--uc-urlbar-custom-bg-color) !important;
+    --zen-colors-input-bg: var(--uc-urlbar-custom-bg-color) !important;
+  }
+}
 
 /* Removes the border of the url bar when toggled */
 @media (-moz-bool-pref: "uc.urlbar.border.removed") {
