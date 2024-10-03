@@ -29,10 +29,32 @@
         "disabledOn": []
     },
     {
-        "property": "uc.urlbar.blur",
-        "label": "Blurs the background when the url bar is in focus",
-        "type": "checkbox",
-        "disabledOn": []
+        "property": "uc.urlbar.blur-intensity",
+        "label": "Enable a Background Blur when the Url Bar is focused & select its Intensity",
+        "type": "dropdown",
+        "disabledOn": [],
+        "options": [
+            {
+                "label": "Subtle",
+                "value": "Subtle"
+            },
+            {
+                "label": "Normal",
+                "value": "Normal"
+            },
+            {
+                "label": "Rather Strong",
+                "value": "RatherStrong"
+            },
+            {
+                "label": "Strong",
+                "value": "Strong"
+            },
+            {
+                "label": "Really Strong",
+                "value": "ReallyStrong"
+            }
+        ]
     },
     {
         "property": "uc.urlbar.icon.zoom.removed",

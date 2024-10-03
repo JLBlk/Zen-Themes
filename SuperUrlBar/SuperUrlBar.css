@@ -40,7 +40,27 @@
 }
 
 /* Blurs the background when url bar is focused when toggled */
-@media (-moz-bool-pref: "uc.urlbar.blur") {
+:root:has(#theme-Super-Url-Bar[uc-urlbar-blur-intensity="Subtle"]) {
+  --blur-intensity: 1px;
+}
+:root:has(#theme-Super-Url-Bar[uc-urlbar-blur-intensity="Normal"]) {
+  --blur-intensity: 2px;
+}
+:root:has(#theme-Super-Url-Bar[uc-urlbar-blur-intensity="RahterStrong"]) {
+  --blur-intensity: 3px;
+}
+:root:has(#theme-Super-Url-Bar[uc-urlbar-blur-intensity="Strong"]) {
+  --blur-intensity: 4px;
+}
+:root:has(#theme-Super-Url-Bar[uc-urlbar-blur-intensity="ReallyStrong"]) {
+  --blur-intensity: 6px;
+}
+
+:root:has(#theme-Super-Url-Bar[uc-urlbar-blur-intensity="Subtle"],
+          #theme-Super-Url-Bar[uc-urlbar-blur-intensity="Normal"],
+          #theme-Super-Url-Bar[uc-urlbar-blur-intensity="RatherStrong"],
+          #theme-Super-Url-Bar[uc-urlbar-blur-intensity="Strong"],
+          #theme-Super-Url-Bar[uc-urlbar-blur-intensity="ReallyStrong"]) {
   #urlbar:is([breakout][breakout-extend], [breakout][usertyping][focused]):after {
     content: "";
     position: fixed;
@@ -53,16 +73,18 @@
     left: 0px;
   
     background-color: rgba(0, 0, 0, 0.3);
-    backdrop-filter: blur(1px);
+    backdrop-filter: blur(var(--blur-intensity));
   
     z-index: -1;
   }
   
   /* Scuffed af solution to make blur work (need to find better solution) */
   :root:not([inDOMFullscreen='true']):not([chromehidden~='location']):not([chromehidden~='toolbar']) {
-    clip-path: inset(0 round var(--zen-webview-border-radius, var(--zen-border-radius)));
+    clip-path: inset(-5px round var(--zen-webview-border-radius, var(--zen-border-radius)));
   }
 }
+
+/* --zen-urlbar-background for future color change feature */
 
 /* Removes the border of the url bar when toggled */
 @media (-moz-bool-pref: "uc.urlbar.border.removed") {
