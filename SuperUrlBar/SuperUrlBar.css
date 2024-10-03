@@ -84,10 +84,19 @@
   }
 }
 
+/* Custom Colors for Url Bar */
 @media (-moz-bool-pref: "uc.urlbar.custom-bg-color.checkbox") {
   :root {
     --zen-urlbar-background: var(--uc-urlbar-custom-bg-color) !important;
     --zen-colors-input-bg: var(--uc-urlbar-custom-bg-color) !important;
+  }
+  #identity-icon-box, #identity-permission-box {
+    background-color: color-mix(in srgb, var(--uc-urlbar-custom-bg-color) 90%, light-dark(black, white)) !important;
+  }
+  #tracking-protection-icon-container, .urlbar-page-action, #picture-in-picture-button, #reader-mode-button {
+    &:hover {
+      background-color: color-mix(in srgb, var(--uc-urlbar-custom-bg-color) 90%, light-dark(black, white)) !important;
+    }
   }
 }
 
