@@ -94,7 +94,7 @@
     background-color: color-mix(in srgb, var(--uc-urlbar-custom-bg-color) 90%, light-dark(black, white)) !important;
   }
   #tracking-protection-icon-container, .urlbar-page-action, #picture-in-picture-button, #reader-mode-button {
-    &:hover {
+    &:hover:not([open="true"]) {
       background-color: color-mix(in srgb, var(--uc-urlbar-custom-bg-color) 90%, light-dark(black, white)) !important;
     }
   }
