@@ -13,7 +13,7 @@ A personal collection of my CSS Themes 🎨 for the [Zen Browser](https://zen-br
 
   - [**SuperGradient**](https://zen-browser.app/themes/af7ee14f-e9d4-4806-8438-c59b02b77715)
 
-![image](https://github.com/user-attachments/assets/c2af95f3-d15f-45bc-bbe6-c78316101422)
+![image](https://github.com/user-attachments/assets/a74f565e-e0c6-471d-94c2-f50ffba015b5)
 
 ---
 
