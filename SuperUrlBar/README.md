@@ -15,3 +15,4 @@
     - Bookmark (Star) icon
     - Reader-Mode icon
     - PiP icon
+  - Show hidden icons when hovering the url bar

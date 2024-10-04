@@ -63,7 +63,7 @@
     },
     {
         "property": "uc.urlbar.custom-bg-color",
-        "label": "Custom Color for the Url Bar",
+        "label": "Custom Color for the Url Bar (Checkbox above needs to be active",
         "placeholder": "Enter Color Code",
         "type": "string"
     },
@@ -96,5 +96,10 @@
         "label": "Hides the Picture-in-Picture icon",
         "type": "checkbox",
         "disabledOn": []
+    },
+    {
+        "property": "uc.urlbar.icon.show-on-hover",
+        "label": "Make all the hidden icons show when hovering the url bar",
+        "type": "checkbox"
     }
 ]
