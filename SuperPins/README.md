@@ -2,7 +2,7 @@
 
 This **Zen Mod** elevates your experience with pinned tabs and the tab bar in general by making some UI changes.
 
-![image](https://github.com/user-attachments/assets/5ff90e12-f535-424b-83ef-56133390c07f)
+![image](https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperPins/image.png)
 
 ## Features (toggle in Zens Mod settings):
   - Increase the width of pinned tabs (This can be controlled through a dropdown)

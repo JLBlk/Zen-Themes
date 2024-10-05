@@ -1,6 +1,6 @@
 # Super Url Bar
 
-![image](https://github.com/user-attachments/assets/f6a88964-98b3-460b-8fe9-bee5775b73ec)
+![image](https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperUrlBar/image.png)
 
 
 ## This **Zen theme** gives you 4 optional settings (in Zen's theme settings):
