@@ -5,7 +5,7 @@ A personal collection of my CSS Themes 🎨 for the [Zen Browser](https://zen-br
 ## Currently there are 3 Themes available to be installed through [Zen's website](https://zen-browser.app/themes):
   - [**SuperPins**](https://zen-browser.app/themes/ad97bb70-0066-4e42-9b5f-173a5e42c6fc)
 
-![image](https://github.com/user-attachments/assets/ca671bae-590a-4ab8-9da5-13dab1369da7)
+![image](https://github.com/user-attachments/assets/9ab2284e-d8b5-47f1-b00c-3c81c8f0ca1f)
 
   - [**Super Url Bar**](https://zen-browser.app/themes/d93e67f8-e5e1-401e-9b82-f9d5bab231e6)
 
