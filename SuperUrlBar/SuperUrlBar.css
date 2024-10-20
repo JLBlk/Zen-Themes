@@ -166,6 +166,12 @@
       opacity: 1;
     } 
   }
+  @media (-moz-bool-pref: "uc.urlbar.icon.hover-zoom.removed") {
+    #urlbar:hover .urlbar-page-action.urlbar-addon-page-action[aria-label="Hover Zoom+"] {
+      position: relative;
+      opacity: 1;
+    }
+  }
   @media (-moz-bool-pref: "uc.urlbar.icon.container.removed") {
     #urlbar:hover #userContext-icons {
       position: relative;
@@ -211,6 +217,13 @@
 }
 @media (-moz-bool-pref: "uc.urlbar.icon.pip.removed") {
   #picture-in-picture-button {
+    opacity: 0;
+    position: var(--position-var);
+    transition: 100ms linear, opacity 200ms linear;
+  }
+}
+@media (-moz-bool-pref: "uc.urlbar.icon.hover-zoom.removed") {
+  .urlbar-page-action.urlbar-addon-page-action[aria-label="Hover Zoom+"] {
     opacity: 0;
     position: var(--position-var);
     transition: 100ms linear, opacity 200ms linear;
