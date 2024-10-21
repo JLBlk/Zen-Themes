@@ -172,6 +172,12 @@
       opacity: 1;
     } 
   }
+  @media (-moz-bool-pref: "uc.urlbar.icon.split-view.removed") {
+    #urlbar:hover #zen-split-views-button {
+      position: relative;
+      opacity: 1;
+    }
+  }
   @media (-moz-bool-pref: "uc.urlbar.icon.left-side.removed") {
     #urlbar:hover #identity-box {
       position: relative;
@@ -218,6 +224,13 @@
 }
 @media (-moz-bool-pref: "uc.urlbar.icon.container.removed") {
   #userContext-icons {
+    opacity: 0;
+    position: var(--position-var);
+    transition: 100ms linear, opacity 200ms linear;
+  }
+}
+@media (-moz-bool-pref: "uc.urlbar.icon.split-view.removed") {
+  #zen-split-views-button {
     opacity: 0;
     position: var(--position-var);
     transition: 100ms linear, opacity 200ms linear;

@@ -121,6 +121,12 @@
         "disabledOn": []
     },
     {
+        "property": "uc.urlbar.icon.split-view.removed",
+        "label": "Hides the Split View icon",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
         "property": "uc.urlbar.icon.container.removed",
         "label": "Hides the Container Tab icon and text",
         "type": "checkbox",
