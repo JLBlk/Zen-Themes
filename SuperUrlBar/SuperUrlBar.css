@@ -173,7 +173,7 @@
     } 
   }
   @media (-moz-bool-pref: "uc.urlbar.icon.split-view.removed") {
-    #urlbar:hover #zen-split-views-button {
+    #urlbar:hover #zen-split-views-box {
       position: relative;
       opacity: 1;
     }
@@ -230,7 +230,7 @@
   }
 }
 @media (-moz-bool-pref: "uc.urlbar.icon.split-view.removed") {
-  #zen-split-views-button {
+  #zen-split-views-box {
     opacity: 0;
     position: var(--position-var);
     transition: 100ms linear, opacity 200ms linear;
