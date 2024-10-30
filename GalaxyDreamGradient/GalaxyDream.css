@@ -1,16 +1,16 @@
-:root:has(#theme-GalaxyDream-Gradient-Legacy[theme-galaxydream-lightness="darker"]) {
+:root:has(#theme-GalaxyDream-Gradient[theme-galaxydream-lightness="darker"]) {
   --galaxydream-lightness: hsl(0, 0%, 20%);
 }
-:root:has(#theme-GalaxyDream-Gradient-Legacy[theme-galaxydream-lightness="normal"]) {
+:root:has(#theme-GalaxyDream-Gradient[theme-galaxydream-lightness="normal"]) {
   --galaxydream-lightness: hsl(0, 0%, 40%);
 }
-:root:has(#theme-GalaxyDream-Gradient-Legacy[theme-galaxydream-lightness="brighter"]) {
+:root:has(#theme-GalaxyDream-Gradient[theme-galaxydream-lightness="brighter"]) {
   --galaxydream-lightness: hsl(0, 0%, 65%);
 }
 
-:root:not(:has(#theme-GalaxyDream-Gradient-Legacy[theme-galaxydream-lightness="darker"],
-        #theme-GalaxyDream-Gradient-Legacy[theme-galaxydream-lightness="normal"],
-        #theme-GalaxyDream-Gradient-Legacy[theme-galaxydream-lightness="brighter"])) {
+:root:not(:has(#theme-GalaxyDream-Gradient[theme-galaxydream-lightness="darker"],
+        #theme-GalaxyDream-Gradient[theme-galaxydream-lightness="normal"],
+        #theme-GalaxyDream-Gradient[theme-galaxydream-lightness="brighter"])) {
   --galaxydream-lightness: hsl(0, 0%, 100%);
 }
 
