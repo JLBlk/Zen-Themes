@@ -11,9 +11,13 @@ A personal collection of my CSS Themes 🎨 for the [Zen Browser](https://zen-br
 
 ![image](https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperUrlBar/image.png)
 
-  - [**SuperGradient**](https://zen-browser.app/themes/af7ee14f-e9d4-4806-8438-c59b02b77715)
+  - **SuperGradient** (Removed, due to native implementation of gradients in Zen)
 
 ![image](https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperGradient/image.png)
+
+  - **Galaxy/Dream Legacy Gradient** (Coming Soon!)
+
+![image](https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/GalaxyDreamGradient/image.png)
 
 ---
 
