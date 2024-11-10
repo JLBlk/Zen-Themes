@@ -1,5 +1,4 @@
 @media (-moz-bool-pref: "zen.tabs.vertical") {
-
     /* Makes essentials transparent (when toggled) */
     :root:has(#theme-SuperPins[uc-essentials-color-scheme="transparent"]) {
         .tabbrowser-tab[zen-essential="true"]:not(:hover):not([selected="true"]) .tab-stack .tab-background {
@@ -8,7 +7,6 @@
     }
 
     @media (-moz-bool-pref: "zen.view.sidebar-expanded") and (not (-moz-bool-pref: "zen.view.sidebar-expanded.on-hover")) {
-
         /* Set width of Essentials (Dropdown) */
         :root:has(#theme-SuperPins[uc-essentials-width="Thin"]) {
             --essentials-width: 50px;
