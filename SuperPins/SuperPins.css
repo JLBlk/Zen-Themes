@@ -54,7 +54,7 @@
           scrollbar-width: thin !important;
       }
           
-      .tab-close-button {
+      #vertical-pinned-tabs-container .tab-close-button {
           display: none !important;
       }
 
