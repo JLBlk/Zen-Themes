@@ -184,4 +184,11 @@
             }
         }
     }
+
+    /* Hide reset button on pinned tabs */
+    @media (-moz-bool-pref: "uc.pins.hide-reset-button") {
+        #vertical-pinned-tabs-container .tab-reset-button {
+            display: none !important;
+        }
+    }
 }
