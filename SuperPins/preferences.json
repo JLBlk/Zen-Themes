@@ -28,6 +28,12 @@
         "disabledOn": []
     },
     {
+        "property": "uc.pins.essentials-layout",
+        "label": "Adds selected width and gap styles from Essentials to pinned tabs",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
         "property": "uc.pins.bg",
         "label": "Adds a background to the pinned tabs",
         "type": "checkbox",
