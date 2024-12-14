@@ -1,4 +1,5 @@
 @media (-moz-bool-pref: "zen.tabs.vertical") {
+    
     /* Makes essentials transparent (when toggled) */
     :root:has(#theme-SuperPins[uc-essentials-color-scheme="transparent"]) {
         .tabbrowser-tab[zen-essential="true"]:not(:hover):not([selected="true"]) .tab-stack .tab-background {
@@ -64,15 +65,7 @@
             margin: 0 !important;
         }
     }
-    
-    /* Let pinned tabs have the same selected styling as essentials */ 
-    @media (-moz-bool-pref: "uc.pins.essentials-layout") {
-        #vertical-pinned-tabs-container {
-            grid-template-columns: repeat(auto-fit, minmax(var(--essentials-width), auto)) !important;
-            gap: var(--essentials-gap) var(--essentials-gap) !important;
-        }
-    }
-  
+
     /* Make Essentials look more box like */
     @media (-moz-bool-pref: "uc.essentials.box-like-corners") {
         .tabbrowser-tab[zen-essential="true"] .tab-stack .tab-background {
@@ -190,6 +183,14 @@
                     visibility: hidden !important;
                 }
             }
+        }
+    }
+
+    /* Let pinned tabs have the same selected styling as essentials */ 
+    @media (-moz-bool-pref: "uc.pins.essentials-layout") {
+        #vertical-pinned-tabs-container {
+            grid-template-columns: repeat(auto-fit, minmax(var(--essentials-width), auto)) !important;
+            gap: var(--essentials-gap) var(--essentials-gap) !important;
         }
     }
 
