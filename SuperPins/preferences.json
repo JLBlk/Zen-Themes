@@ -40,6 +40,12 @@
         "disabledOn": []
     },
     {
+        "property": "uc.pins.hide-reset-button",
+        "label": "Hide the reset button on pinned tabs",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
         "property": "uc.essentials.gap",
         "label": "Select the gap between Essentials",
         "type": "dropdown",

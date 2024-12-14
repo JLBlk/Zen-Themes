@@ -67,11 +67,12 @@
     
     /* Let pinned tabs have the same selected styling as essentials */ 
     @media (-moz-bool-pref: "uc.pins.essentials-layout") {
-      #vertical-pinned-tabs-container {
-        grid-template-columns: repeat(auto-fit, minmax(var(--essentials-width), auto)) !important;
-        gap: var(--essentials-gap) var(--essentials-gap) !important;
+        #vertical-pinned-tabs-container {
+            grid-template-columns: repeat(auto-fit, minmax(var(--essentials-width), auto)) !important;
+            gap: var(--essentials-gap) var(--essentials-gap) !important;
+        }
     }
-
+  
     /* Make Essentials look more box like */
     @media (-moz-bool-pref: "uc.essentials.box-like-corners") {
         .tabbrowser-tab[zen-essential="true"] .tab-stack .tab-background {
@@ -189,6 +190,13 @@
                     visibility: hidden !important;
                 }
             }
+        }
+    }
+
+    /* Hide reset button on pinned tabs */
+    @media (-moz-bool-pref: "uc.pins.hide-reset-button") {
+        #vertical-pinned-tabs-container .tab-reset-button {
+            display: none !important;
         }
     }
 }
