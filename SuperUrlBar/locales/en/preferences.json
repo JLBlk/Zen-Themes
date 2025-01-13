@@ -1,5 +1,26 @@
 [
     {
+        "property": "uc.language",
+        "label": "Language / Idioma",
+        "type": "dropdown",
+        "defaultValue": "en",
+        "disabledOn": [],
+        "options": [
+            {
+                "label": "English",
+                "value": "en"
+            },
+            {
+                "label": "Português do Brasil",
+                "value": "pt-BR"
+            },
+            {
+                "label": "Español",
+                "value": "es"
+            }
+        ]
+    },
+    {
         "property": "uc.urlbar.border-radius",
         "label": "Adjusts the border radius of the url bar and its items",
         "type": "checkbox",
