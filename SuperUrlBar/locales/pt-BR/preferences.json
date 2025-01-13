@@ -1,5 +1,26 @@
 [
     {
+        "property": "uc.language",
+        "label": "Idioma / Language",
+        "type": "dropdown",
+        "defaultValue": "pt-BR",
+        "disabledOn": [],
+        "options": [
+            {
+                "label": "Português do Brasil",
+                "value": "pt-BR"
+            },
+            {
+                "label": "English",
+                "value": "en"
+            },
+            {
+                "label": "Español",
+                "value": "es"
+            }
+        ]
+    },
+    {
         "property": "uc.urlbar.border-radius",
         "label": "Ajusta o raio da borda da barra de URL e seus itens",
         "type": "checkbox",
