@@ -1,0 +1,165 @@
+[
+    {
+        "property": "uc.urlbar.border-radius",
+        "label": "Ajusta el radio del borde de la barra de URL y sus elementos",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.urltext.center",
+        "label": "Centra el texto dentro de la barra de URL",
+        "type": "dropdown",
+        "defaultValue": "normal",
+        "disabledOn": [],
+        "options": [
+            {
+                "label": "Centrado a menos que esté enfocado",
+                "value": "normal"
+            },
+            {
+                "label": "Siempre centrado",
+                "value": "advanced"
+            }
+        ]
+    },
+    {
+        "property": "uc.urlbar.border",
+        "label": "Añade un borde a la barra de URL",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.urlbar.move-icon-into",
+        "label": "Mueve un botón que está directamente al lado de la barra de URL (puedes hacerlo usando 'Personalizar barra de herramientas') a la barra de URL",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.urlbar.blur-intensity",
+        "label": "Activa el desenfoque de fondo cuando la barra de URL está enfocada y selecciona su intensidad",
+        "type": "dropdown",
+        "disabledOn": [],
+        "options": [
+            {
+                "label": "Sutil",
+                "value": "Subtle"
+            },
+            {
+                "label": "Normal",
+                "value": "Normal"
+            },
+            {
+                "label": "Bastante fuerte",
+                "value": "RatherStrong"
+            },
+            {
+                "label": "Fuerte",
+                "value": "Strong"
+            },
+            {
+                "label": "Muy fuerte",
+                "value": "ReallyStrong"
+            }
+        ]
+    },
+    {
+        "property": "uc.urlbar.custom-bg-color.mode",
+        "label": "Activa colores personalizados para la barra de URL",
+        "placeholder": "Desactivado",
+        "type": "dropdown",
+        "disabledOn": [],
+        "options": [
+            {
+                "label": "Color cuando la barra de URL está enfocada",
+                "value": "Focus"
+            },
+            {
+                "label": "Color cuando la barra de URL NO está enfocada",
+                "value": "noFocus"
+            },
+            {
+                "label": "Color siempre en la barra de URL",
+                "value": "AlwaysColor"
+            }
+        ]
+    },
+    {
+        "property": "uc.urlbar.custom-bg-color",
+        "label": "Color personalizado para la barra de URL (el dropdown anterior debe estar activado)",
+        "placeholder": "Introduce el código de color",
+        "type": "string"
+    },
+    {
+        "property": "browser.urlbar.openintab",
+        "label": "Abrir siempre los sitios web en una nueva pestaña al usar la barra de URL",
+        "type": "checkbox"
+    },
+    {
+        "property": "uc.urlbar.hide.container-info",
+        "label": "Oculta la información del contenedor",
+        "type": "dropdown",
+        "placeholder": "Desactivado",
+        "disabledOn": [],
+        "options": [
+            {
+                "label": "Ocultar solo la etiqueta",
+                "value": "hideLabel"
+            },
+            {
+                "label": "Ocultar solo el ícono",
+                "value": "hideIcon"
+            },
+            {
+                "label": "Ocultar ambos, ícono y etiqueta",
+                "value": "hideIconLabel"
+            }
+        ]
+    },
+    {
+        "property": "uc.urlbar.icon.zoom.removed",
+        "label": "Oculta el ícono de Zoom",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.urlbar.icon.shield.removed",
+        "label": "Oculta el ícono de Escudo",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.urlbar.icon.bookmark.removed",
+        "label": "Oculta el ícono de Favorito (Estrella)",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.urlbar.icon.reader-mode.removed",
+        "label": "Oculta el ícono de Modo Lector",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.urlbar.icon.pip.removed",
+        "label": "Oculta el ícono de Imagen en Imagen",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.urlbar.icon.split-view.removed",
+        "label": "Oculta el ícono de Vista Dividida",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.urlbar.icon.left-side.removed",
+        "label": "Oculta todos los íconos/botones del lado izquierdo",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.urlbar.icon.show-on-hover",
+        "label": "Hace que todos los íconos ocultos se muestren al pasar el cursor sobre la barra de URL",
+        "type": "checkbox"
+    }
+]
