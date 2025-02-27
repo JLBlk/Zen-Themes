@@ -7,7 +7,7 @@ A personal collection of my CSS Themes 🎨 for the [Zen Browser](https://zen-br
 
 ![image](https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperPins/image.png)
 
-  - [**Super Url Bar**](https://zen-browser.app/themes/d93e67f8-e5e1-401e-9b82-f9d5bab231e6)
+  - **Super Url Bar** (Deprecated)
 
 ![image](https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperUrlBar/image.png)
 
