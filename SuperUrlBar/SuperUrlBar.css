@@ -80,10 +80,10 @@
     pointer-events: none;
   
     width: 200vw;
-    height: 100vh;
+    height: 200vh;
   
-    top: 0px;
-    left: -50px;
+    top: -50px;
+    left: -1000px;
   
     background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(var(--blur-intensity));
