@@ -1,0 +1,20 @@
+{
+  "available": [
+    {
+      "code": "en",
+      "name": "English",
+      "nativeName": "English"
+    },
+    {
+      "code": "pt-BR",
+      "name": "Brazilian Portuguese",
+      "nativeName": "Português do Brasil"
+    },
+    {
+      "code": "es",
+      "name": "Spanish",
+      "nativeName": "Español"
+    }
+  ],
+  "default": "en"
+}
