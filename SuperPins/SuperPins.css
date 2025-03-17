@@ -91,6 +91,14 @@
             gap: 3px !important;
         }
 
+        /*Somewhat fixes the bleeding of pins from other workspaces*/
+        #vertical-pinned-tabs-container > .zen-workspace-tabs-section[active] {
+            visibility: visible;
+        } 
+        #vertical-pinned-tabs-container > .zen-workspace-tabs-section[hidden]{
+            visibility: hidden;
+        }
+
         #vertical-pinned-tabs-container>.zen-workspace-tabs-section>.tabbrowser-tab[pinned] {
             --toolbarbutton-inner-padding: 0;
         }
