@@ -8,6 +8,12 @@
     }
 
     @media (-moz-bool-pref: "zen.view.sidebar-expanded") and (not (-moz-bool-pref: "zen.view.sidebar-expanded.on-hover")) {
+        
+        /* Hide inactive workspaces */
+        .zen-workspace-tabs-section[hidden="true"],
+        .zen-workspace-tabs-section:not([active="true"]) {
+            visibility: hidden;
+        }
 
         /* Set width of Essentials (Dropdown) */
         :root:has(#theme-SuperPins[uc-essentials-width="Thin"]) {
