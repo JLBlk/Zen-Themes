@@ -215,8 +215,8 @@
         }
     }
 
-    /* pins icons size */
-    :root:has(#theme-SuperPins[uc-pinned-icon-size="small"]) {
+    /* favicon size */
+    :root:has(#theme-SuperPins[uc-favicon-size="small"]) {
         .tab-throbber,
         .tab-icon-pending,
         .tab-icon-image,
@@ -227,7 +227,7 @@
         }
     }
 
-    :root:has(#theme-SuperPins[uc-pinned-icon-size="normal"]) {
+    :root:has(#theme-SuperPins[uc-favicon-size="normal"]) {
         .tab-throbber,
         .tab-icon-pending,
         .tab-icon-image,
@@ -238,7 +238,7 @@
         }
     }
 
-    :root:has(#theme-SuperPins[uc-pinned-icon-size="large"]) {
+    :root:has(#theme-SuperPins[uc-favicon-size="large"]) {
         .tab-throbber,
         .tab-icon-pending,
         .tab-icon-image,

@@ -16,7 +16,7 @@ This **Zen Mod** elevates your experience with pinned tabs and Essentials by mak
   - Load pinned tabs only when using them, instead of loading all of them on startup
   - Dim unloaded tabs
   - Customize height of Pinned tabs (Small, Normal, Large)
-  - Adjust Pinned icons size (Small, Normal, Large)
+  - Adjust tab favicon size (Small, Normal, Large)
   - Change workspace icons size (Extra Small, Small, Medium, Large)
   - Control the current workspace indicator icon size (Small, Normal, Large)
 
