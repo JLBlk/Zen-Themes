@@ -91,13 +91,13 @@
             gap: 3px !important;
         }
 
-        /*Somewhat fixes the bleeding of pins from other workspaces*/
+        /* WIP Somewhat fixes the bleeding of pins from other workspaces
         #vertical-pinned-tabs-container > .zen-workspace-tabs-section[active] {
             visibility: visible;
         } 
         #vertical-pinned-tabs-container > .zen-workspace-tabs-section[hidden]{
             visibility: hidden;
-        }
+        }*/
 
         #vertical-pinned-tabs-container>.zen-workspace-tabs-section>.tabbrowser-tab[pinned] {
             --toolbarbutton-inner-padding: 0;
@@ -186,6 +186,110 @@
             grid-template-columns: repeat(auto-fit,
                     minmax(var(--essentials-width), auto)) !important;
             gap: var(--essentials-gap) var(--essentials-gap) !important;
+        }
+    }
+
+    
+    /* pins height */
+    :root:has(#theme-SuperPins[uc-pinned-height="small"]) {
+        #navigator-toolbox[zen-sidebar-expanded="true"]
+            #vertical-pinned-tabs-container:has(tab:not([hidden]))
+            .tabbrowser-tab {
+            height: 40px !important;
+        }
+    }
+
+    :root:has(#theme-SuperPins[uc-pinned-height="normal"]) {
+        #navigator-toolbox[zen-sidebar-expanded="true"]
+            #vertical-pinned-tabs-container:has(tab:not([hidden]))
+            .tabbrowser-tab {
+            height: 50px !important;
+        }
+    }
+
+    :root:has(#theme-SuperPins[uc-pinned-height="large"]) {
+        #navigator-toolbox[zen-sidebar-expanded="true"]
+            #vertical-pinned-tabs-container:has(tab:not([hidden]))
+            .tabbrowser-tab {
+            height: 60px !important;
+        }
+    }
+
+    /* favicon size */
+    :root:has(#theme-SuperPins[uc-favicon-size="small"]) {
+        .tab-throbber,
+        .tab-icon-pending,
+        .tab-icon-image,
+        .tab-sharing-icon-overlay,
+        .tab-icon-overlay {
+            height: 16px !important;
+            width: 16px !important;
+        }
+    }
+
+    :root:has(#theme-SuperPins[uc-favicon-size="normal"]) {
+        .tab-throbber,
+        .tab-icon-pending,
+        .tab-icon-image,
+        .tab-sharing-icon-overlay,
+        .tab-icon-overlay {
+            height: 18px !important;
+            width: 18px !important;
+        }
+    }
+
+    :root:has(#theme-SuperPins[uc-favicon-size="large"]) {
+        .tab-throbber,
+        .tab-icon-pending,
+        .tab-icon-image,
+        .tab-sharing-icon-overlay,
+        .tab-icon-overlay {
+            height: 20px !important;
+            width: 20px !important;
+        }
+    }
+
+    /* workspace icons size */
+    :root:has(#theme-SuperPins[uc-workspace-icon-size="x-small"]) {
+        #zen-workspaces-button {
+            font-size: x-small !important;
+        }
+    }
+
+    :root:has(#theme-SuperPins[uc-workspace-icon-size="small"]) {
+        #zen-workspaces-button {
+            font-size: small !important;
+        }
+    }
+
+    :root:has(#theme-SuperPins[uc-workspace-icon-size="medium"]) {
+        #zen-workspaces-button {
+            font-size: medium !important;
+        }
+    }
+
+    :root:has(#theme-SuperPins[uc-workspace-icon-size="large"]) {
+        #zen-workspaces-button {
+            font-size: large !important;
+        }
+    }
+
+    /* current workspace icons size */
+    :root:has(#theme-SuperPins[uc-workspace-current-icon-size="small"]) {
+        .zen-current-workspace-indicator .zen-current-workspace-indicator-icon {
+            font-size: 12px !important;
+        }
+    }
+
+    :root:has(#theme-SuperPins[uc-workspace-current-icon-size="normal"]) {
+        .zen-current-workspace-indicator .zen-current-workspace-indicator-icon {
+            font-size: 14.5px !important;
+        }
+    }
+
+    :root:has(#theme-SuperPins[uc-workspace-current-icon-size="large"]) {
+        .zen-current-workspace-indicator .zen-current-workspace-indicator-icon {
+            font-size: 16px !important;
         }
     }
 }
