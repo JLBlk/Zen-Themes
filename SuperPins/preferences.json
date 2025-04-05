@@ -120,8 +120,8 @@
         "disabledOn": []
     },
     {
-        "property": "uc.essentials.height",
-        "label": "Height of Essentials tabs",
+        "property": "uc.pinned.height",
+        "label": "Height of Pinned tabs",
         "type": "dropdown",
         "placeholder": "Default",
         "options": [
@@ -140,8 +140,8 @@
         ]
     },
     {
-        "property": "uc.essentials.icon.size",
-        "label": "Size of Essential icons",
+        "property": "uc.pinned.icon.size",
+        "label": "Size of Pinned icons",
         "type": "dropdown",
         "placeholder": "Default",
         "options": [

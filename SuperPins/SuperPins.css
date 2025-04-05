@@ -191,7 +191,7 @@
 
     
     /* essentials height */
-    :root:has(#theme-SuperPins[uc-essentials-height="small"]) {
+    :root:has(#theme-SuperPins[uc-pinned-height="small"]) {
         #navigator-toolbox[zen-sidebar-expanded="true"]
             #vertical-pinned-tabs-container:has(tab:not([hidden]))
             .tabbrowser-tab {
@@ -199,7 +199,7 @@
         }
     }
 
-    :root:has(#theme-SuperPins[uc-essentials-height="normal"]) {
+    :root:has(#theme-SuperPins[uc-pinned-height="normal"]) {
         #navigator-toolbox[zen-sidebar-expanded="true"]
             #vertical-pinned-tabs-container:has(tab:not([hidden]))
             .tabbrowser-tab {
@@ -207,7 +207,7 @@
         }
     }
 
-    :root:has(#theme-SuperPins[uc-essentials-height="large"]) {
+    :root:has(#theme-SuperPins[uc-pinned-height="large"]) {
         #navigator-toolbox[zen-sidebar-expanded="true"]
             #vertical-pinned-tabs-container:has(tab:not([hidden]))
             .tabbrowser-tab {
@@ -216,7 +216,7 @@
     }
 
     /* essential icons size */
-    :root:has(#theme-SuperPins[uc-essentials-icon-size="small"]) {
+    :root:has(#theme-SuperPins[uc-pinned-icon-size="small"]) {
         .tab-throbber,
         .tab-icon-pending,
         .tab-icon-image,
@@ -227,7 +227,7 @@
         }
     }
 
-    :root:has(#theme-SuperPins[uc-essentials-icon-size="normal"]) {
+    :root:has(#theme-SuperPins[uc-pinned-icon-size="normal"]) {
         .tab-throbber,
         .tab-icon-pending,
         .tab-icon-image,
@@ -238,7 +238,7 @@
         }
     }
 
-    :root:has(#theme-SuperPins[uc-essentials-icon-size="large"]) {
+    :root:has(#theme-SuperPins[uc-pinned-icon-size="large"]) {
         .tab-throbber,
         .tab-icon-pending,
         .tab-icon-image,
