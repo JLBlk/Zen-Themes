@@ -91,13 +91,13 @@
             gap: 3px !important;
         }
 
-        /*Somewhat fixes the bleeding of pins from other workspaces*/
+        /* WIP Somewhat fixes the bleeding of pins from other workspaces
         #vertical-pinned-tabs-container > .zen-workspace-tabs-section[active] {
             visibility: visible;
         } 
         #vertical-pinned-tabs-container > .zen-workspace-tabs-section[hidden]{
             visibility: hidden;
-        }
+        }*/
 
         #vertical-pinned-tabs-container>.zen-workspace-tabs-section>.tabbrowser-tab[pinned] {
             --toolbarbutton-inner-padding: 0;
@@ -190,7 +190,7 @@
     }
 
     
-    /* essentials height */
+    /* pins height */
     :root:has(#theme-SuperPins[uc-pinned-height="small"]) {
         #navigator-toolbox[zen-sidebar-expanded="true"]
             #vertical-pinned-tabs-container:has(tab:not([hidden]))
@@ -215,7 +215,7 @@
         }
     }
 
-    /* essential icons size */
+    /* pins icons size */
     :root:has(#theme-SuperPins[uc-pinned-icon-size="small"]) {
         .tab-throbber,
         .tab-icon-pending,
