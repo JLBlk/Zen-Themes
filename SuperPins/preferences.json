@@ -118,5 +118,89 @@
         "label": "Dims unloaded tabs",
         "type": "checkbox",
         "disabledOn": []
+    },
+    {
+        "property": "uc.essentials.height",
+        "label": "Height of Essentials tabs",
+        "type": "dropdown",
+        "placeholder": "Default",
+        "options": [
+            {
+                "label": "Small",
+                "value": "small"
+            },
+            {
+                "label": "Normal",
+                "value": "normal"
+            },
+            {
+                "label": "Large",
+                "value": "large"
+            }
+        ]
+    },
+    {
+        "property": "uc.essentials.icon.size",
+        "label": "Size of Essential icons",
+        "type": "dropdown",
+        "placeholder": "Default",
+        "options": [
+            {
+                "label": "Small",
+                "value": "small"
+            },
+            {
+                "label": "Normal",
+                "value": "normal"
+            },
+            {
+                "label": "Large",
+                "value": "large"
+            }
+        ]
+    },
+    {
+        "property": "uc.workspace.icon.size",
+        "label": "Size of workspace icons",
+        "type": "dropdown",
+        "placeholder": "Default",
+        "options": [
+            {
+                "label": "Extra Small",
+                "value": "x-small"
+            },
+            {
+                "label": "Small",
+                "value": "small"
+            },
+            {
+                "label": "Medium",
+                "value": "medium"
+            },
+            {
+                "label": "Large",
+                "value": "large"
+            }
+        ]
+    },
+    {
+        "property": "uc.workspace.current.icon.size",
+        "label": "Size of current workspace indicator icon",
+        "type": "dropdown",
+        "placeholder": "Default",
+        "options": [
+            {
+                "label": "Small",
+                "value": "small"
+            },
+            {
+                "label": "Normal",
+                "value": "normal"
+            },
+            {
+                "label": "Large",
+                "value": "large"
+            }
+        ]
     }
 ]
