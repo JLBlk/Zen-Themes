@@ -2,6 +2,11 @@
 
 ![image](https://raw.githubusercontent.com/JLBlk/Zen-Themes/refs/heads/main/SuperUrlBar/image.png)
 
+## Supported Languages / Idiomas Suportados / Idiomas Soportados
+- English
+- Português do Brasil
+- Español
+
 
 ## Settings:
   - Adjust border radius of the url bar (Circle like corners)
