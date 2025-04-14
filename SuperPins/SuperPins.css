@@ -103,9 +103,14 @@
             --toolbarbutton-inner-padding: 0;
         }
 
-        /*fixing the weird seperator behaviour by removing it*/
-        .vertical-pinned-tabs-container-separator {
-            display: none !important;
+        /* Single sibling case: only child1 + child2 (2 total children) */
+        .zen-workspace-tabs-section:has(> *:nth-child(2)) .vertical-pinned-tabs-container-separator {
+            grid-column: 1 / 2 !important;
+        }
+  
+        /* Multiple siblings case: child1, child3, etc. + child2 (3+ total children) */
+        .zen-workspace-tabs-section:has(> *:nth-child(3)) .vertical-pinned-tabs-container-separator {
+            grid-column: 1 / -1 !important;
         }
 
         #tabbrowser-arrowscrollbox .tabbrowser-tab:first-child {
