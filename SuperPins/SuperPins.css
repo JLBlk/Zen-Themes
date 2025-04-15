@@ -110,7 +110,6 @@
         #vertical-pinned-tabs-container>.zen-workspace-tabs-section {
             gap: 3px !important;
             padding: 0 var(--zen-toolbox-padding) !important;
-            width: calc(100% - var(--zen-toolbox-padding) * 2) !important;
             overflow: hidden !important;
         }
 
@@ -168,7 +167,7 @@
            this results in the flex elements not wrapping but rather abusing this space and constantly increasing
            the size of the navigator-toolbox */
         #navigator-toolbox {
-
+            /* min-width: none !important; */
         }
     }
 
@@ -237,6 +236,9 @@
             grid-template-columns: repeat(auto-fit,
                     minmax(var(--essentials-width), auto)) !important;
             gap: var(--essentials-gap) var(--essentials-gap) !important;
+        }
+
+        #vertical-pinned-tabs-container>.zen-workspace-tabs-section>.tabbrowser-tab[pinned] {
             min-width: var(--essentials-width) !important;
         }
     }
@@ -328,6 +330,29 @@
   :root:has(#theme-SuperPins[uc-workspace-current-icon-size="large"]) {
       .zen-current-workspace-indicator .zen-current-workspace-indicator-icon {
           font-size: 16px !important;
+      }
+  }
+
+  /* Default to dimmed icons and text */
+  .tab-icon-image[pending="true"] {
+    opacity: 0.5 !important;
+  }
+
+  .tabbrowser-tab[pending="true"] .tab-text {
+    opacity: 0.5 !important;
+  }
+
+  /* If dim-type is set to icons or none. */
+  :root:has(#theme-SuperPins[uc-tabs-dim-type="icons"], #theme-SuperPins[uc-tabs-dim-type="none"]) {
+      .tabbrowser-tab[pending="true"] .tab-text {
+        opacity: 1 !important;
+      }
+  }
+
+  /* If dim-type is set to none or text. */
+  :root:has(#theme-SuperPins[uc-tabs-dim-type="text"], #theme-SuperPins[uc-tabs-dim-type="none"]) {
+      .tab-icon-image[pending="true"] {
+        opacity: 1 !important;
       }
   }
 }
