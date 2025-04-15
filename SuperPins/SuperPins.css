@@ -90,7 +90,6 @@
               display: grid !important;
               overflow: hidden !important;
               gap: 3px !important;
-              width: calc(100% - var(--zen-toolbox-padding) * 2) !important;
               padding: 0 calc(var(--zen-toolbox-padding)) !important;
           }
   
