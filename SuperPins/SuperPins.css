@@ -108,9 +108,9 @@
 
         /*The actual grid layout*/
         #vertical-pinned-tabs-container>.zen-workspace-tabs-section {
-            gap: 3px !important;
             padding: 0 var(--zen-toolbox-padding) !important;
             overflow: hidden !important;
+            padding-bottom: 15px !important;
         }
 
         #vertical-pinned-tabs-container>.zen-workspace-tabs-section>.tabbrowser-tab[pinned] {
@@ -121,19 +121,20 @@
             margin-top: 5px !important;
         }
 
+        #vertical-pinned-tabs-container > .zen-workspace-tabs-section > :not(:last-child) {
+            margin-right: 3px !important;
+        }
+
+        #vertical-pinned-tabs-container > .zen-workspace-tabs-section > * {
+            margin-bottom: 3px !important;
+        }
+
         .vertical-pinned-tabs-container-separator {
-            width: 100% !important;
-            flex: 0 0 100% !important;
-        }
-
-        /* Single sibling case: only child1 + child2 (2 total children) */
-        .zen-workspace-tabs-section:has(> *:nth-child(2)) .vertical-pinned-tabs-container-separator {
-            grid-column: 1 / 2 !important;
-        }
-
-        /* Multiple siblings case: child1, child3, etc. + child2 (3+ total children) */
-        .zen-workspace-tabs-section:has(> *:nth-child(3)) .vertical-pinned-tabs-container-separator {
-            grid-column: 1 / -1 !important;
+            position: absolute !important;
+            bottom: 5px !important;
+            left: 50% !important;
+            transform: translateX(-50%) !important;
+            width: calc(100% - var(--zen-toolbox-padding) * 2) !important;
         }
     }
 
@@ -240,6 +241,14 @@
 
         #vertical-pinned-tabs-container>.zen-workspace-tabs-section>.tabbrowser-tab[pinned] {
             min-width: var(--essentials-width) !important;
+        }
+
+        #vertical-pinned-tabs-container > .zen-workspace-tabs-section > :not(:last-child) {
+            margin-right: 3px !important;
+        }
+
+        #vertical-pinned-tabs-container > .zen-workspace-tabs-section > * {
+            margin-bottom: 3px !important;
         }
     }
     /* pins height */
