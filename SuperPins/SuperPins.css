@@ -28,6 +28,7 @@
             #zen-essentials-container {
                 grid-template-columns: repeat(auto-fit,
                         minmax(var(--essentials-width), auto)) !important;
+                min-width: var(--essentials-width) !important;
             }
         }
 
@@ -83,13 +84,34 @@
             }
         }
 
+        /* Make pinned tabs auto-grow to span full width of row */
+        @media (-moz-bool-pref: "uc.pins.auto-grow") {
+            #vertical-pinned-tabs-container>.zen-workspace-tabs-section>.tabbrowser-tab[pinned] {
+                width: auto !important;
+                min-width: var(--tab-pinned-min-width-expanded) !important;
+                flex: 1 1 auto !important;
+            }
+
+            #vertical-pinned-tabs-container>.zen-workspace-tabs-section {
+                display: flex !important;
+                flex-wrap: wrap !important;
+                flex-direction: row !important;
+            }
+        }
+
+        @media (not (-moz-bool-pref: "uc.pins.auto-grow")) {
+            #vertical-pinned-tabs-container>.zen-workspace-tabs-section {
+                grid-template-columns: repeat(auto-fit, minmax(var(--tab-pinned-min-width-expanded), auto)) !important;
+                display: grid !important;
+            }
+        }
+
         /*The actual grid layout*/
         #vertical-pinned-tabs-container>.zen-workspace-tabs-section {
-            grid-template-columns: repeat(auto-fit, minmax(var(--tab-pinned-min-width-expanded), auto)) !important;
-            display: grid !important;
-            overflow: hidden !important;
             gap: 3px !important;
-            padding: 0 calc(var(--zen-toolbox-padding)) !important;
+            padding: 0 var(--zen-toolbox-padding) !important;
+            width: calc(100% - var(--zen-toolbox-padding) * 2) !important;
+            overflow: hidden !important;
         }
 
         #vertical-pinned-tabs-container>.zen-workspace-tabs-section>.tabbrowser-tab[pinned] {
@@ -99,9 +121,12 @@
         #tabbrowser-arrowscrollbox .tabbrowser-tab:first-child {
             margin-top: 5px !important;
         }
+
         .vertical-pinned-tabs-container-separator {
             width: 100% !important;
+            flex: 0 0 100% !important;
         }
+
         /* Single sibling case: only child1 + child2 (2 total children) */
         .zen-workspace-tabs-section:has(> *:nth-child(2)) .vertical-pinned-tabs-container-separator {
             grid-column: 1 / 2 !important;
@@ -117,6 +142,33 @@
     @media (-moz-bool-pref: "uc.essentials.box-like-corners") {
         .tabbrowser-tab[zen-essential="true"] .tab-stack .tab-background {
             border-radius: 5px !important;
+        }
+    }
+
+    /* Make Essentials auto-grow to span full width of a row */
+    @media (-moz-bool-pref: "uc.essentials.auto-grow") {
+        .tabbrowser-tab[zen-essential="true"] {
+            width: auto !important;
+            min-width: var(--essentials-width) !important;
+            flex: 1 1 0 !important;
+            box-sizing: border-box !important;
+        }
+
+        #zen-essentials-container {
+            display: flex !important;
+            flex-wrap: wrap !important;
+            flex-direction: row !important;
+            box-sizing: border-box !important;
+            width: 100% !important;
+            min-width: 0 !important;
+            height: auto !important;
+        }
+
+        /* The reason Essentials don't have auto-grow yet is that the navigator-toolbox has a min-width of fit-content
+           this results in the flex elements not wrapping but rather abusing this space and constantly increasing
+           the size of the navigator-toolbox */
+        #navigator-toolbox {
+
         }
     }
 
@@ -185,6 +237,7 @@
             grid-template-columns: repeat(auto-fit,
                     minmax(var(--essentials-width), auto)) !important;
             gap: var(--essentials-gap) var(--essentials-gap) !important;
+            min-width: var(--essentials-width) !important;
         }
     }
     /* pins height */
