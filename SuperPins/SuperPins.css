@@ -1,245 +1,361 @@
-[
-    {
-        "property": "uc.essentials.width",
-        "label": "Select the general width of Essentials (The width before the Essentials start wrapping to the next row)",
-        "type": "dropdown",
-        "placeholder": "Zen Default",
-        "defaultValue": "Normal",
-        "disabledOn": [],
-        "options": [
-            {
-                "label": "Thin",
-                "value": "Thin"
-            },
-            {
-                "label": "Normal",
-                "value": "Normal"
-            },
-            {
-                "label": "Wide",
-                "value": "Wide"
-            }
-        ]
-    },
-    {
-        "property": "uc.essentials.gap",
-        "label": "Select the gap between Essentials",
-        "type": "dropdown",
-        "placeholder": "Zen Default",
-        "defaultValue": "Normal",
-        "disabledOn": [],
-        "options": [
-            {
-                "label": "Small",
-                "value": "Small"
-            },
-            {
-                "label": "Normal",
-                "value": "Normal"
-            },
-            {
-                "label": "Big",
-                "value": "Big"
-            }
-        ]
-    },
-    {
-        "property": "uc.pins.essentials-layout",
-        "label": "Adds selected width and gap styles from Essentials to pinned tabs as well",
-        "type": "checkbox",
-        "disabledOn": []
-    },
-    {
-        "property": "uc.essentials.color-scheme",
-        "label": "Background/Color types of Essentials",
-        "type": "dropdown",
-        "placeholder": "Zen Default",
-        "disabledOn": [],
-        "options": [
-            {
-                "label": "Transparent Background",
-                "value": "transparent"
-            }
-        ]
-    },
-    {
-        "property": "uc.essentials.box-like-corners",
-        "label": "Makes the Essentials look more box like (Less rounded edges)",
-        "type": "checkbox",
-        "disabledOn": []
-    },
-    {
-        "property": "uc.essentials.auto-grow",
-        "label": "Makes the Essentials auto-grow to fit the full width of its row.",
-        "type": "checkbox",
-        "disabledOn": []
-    },
-    {
-        "property": "uc.essentials.position",
-        "label": "Select the position of Essentials",
-        "type": "dropdown",
-        "placeholder": "Top",
-        "disabledOn": [],
-        "options": [
-            {
-                "label": "Bottom",
-                "value": "bottom"
-            }
-        ]
-    },
-    {
-        "property": "uc.superpins.border",
-        "label": "Add a border around Pins/Essentials",
-        "type": "dropdown",
-        "placeholder": "Disabled",
-        "disabledOn": [],
-        "options": [
-            {
-                "label": "Pins only",
-                "value": "pins"
-            },
-            {
-                "label": "Essentials only",
-                "value": "essentials"
-            },
-            {
-                "label": "Pins + Essentials",
-                "value": "both"
-            }
-        ]
-    },
-    {
-        "property": "uc.pins.legacy-layout",
-        "label": "Makes pinned tabs look similar to Essentials (icon only in a grid)",
-        "type": "checkbox",
-        "disabledOn": []
-    },
-    {
-        "property": "uc.pins.auto-grow",
-        "label": "Makes pinned tabs auto-grow to fit the full width of its row.",
-        "type": "checkbox",
-        "disabledOn": []
-    },
-    {
-        "property": "uc.pins.bg",
-        "label": "Adds a background to the pinned tabs",
-        "type": "checkbox",
-        "disabledOn": []
-    },
-    {
-        "property": "zen.workspaces.show-workspace-indicator",
-        "label": "Shows the workspace-indicator between Essentials and Pins",
-        "type": "checkbox",
-        "disabledOn": []
-    },
-    {
-        "property": "browser.sessionstore.restore_pinned_tabs_on_demand",
-        "label": "Loads pinned tabs only when using them, instead of loading all of them on startup",
-        "type": "checkbox",
-        "disabledOn": []
-    },
-    {
-        "property": "uc.tabs.dim-type",
-        "label": "Dim the selected parts of a tab when it is unloaded",
-        "type": "dropdown",
-        "disabledOn": [],
-        "options": [
-            {
-                "label": "Icons + Text",
-                "value": "both"
-            },
-            {
-                "label": "Icons only",
-                "value": "icons"
-            },
-            {
-                "label": "Text only",
-                "value": "text"
-            }
-        ]
-    },
-    {
-        "property": "uc.pinned.height",
-        "label": "Height of Pinned tabs",
-        "type": "dropdown",
-        "placeholder": "Default",
-        "options": [
-            {
-                "label": "Small",
-                "value": "small"
-            },
-            {
-                "label": "Normal",
-                "value": "normal"
-            },
-            {
-                "label": "Large",
-                "value": "large"
-            }
-        ]
-    },
-    {
-        "property": "uc.favicon.size",
-        "label": "Size of tabs favicons",
-        "type": "dropdown",
-        "placeholder": "Default",
-        "options": [
-            {
-                "label": "Small",
-                "value": "small"
-            },
-            {
-                "label": "Normal",
-                "value": "normal"
-            },
-            {
-                "label": "Large",
-                "value": "large"
-            }
-        ]
-    },
-    {
-        "property": "uc.workspace.icon.size",
-        "label": "Size of workspace icons",
-        "type": "dropdown",
-        "placeholder": "Default",
-        "options": [
-            {
-                "label": "Extra Small",
-                "value": "x-small"
-            },
-            {
-                "label": "Small",
-                "value": "small"
-            },
-            {
-                "label": "Medium",
-                "value": "medium"
-            },
-            {
-                "label": "Large",
-                "value": "large"
-            }
-        ]
-    },
-    {
-        "property": "uc.workspace.current.icon.size",
-        "label": "Size of current workspace indicator icon",
-        "type": "dropdown",
-        "placeholder": "Default",
-        "options": [
-            {
-                "label": "Small",
-                "value": "small"
-            },
-            {
-                "label": "Normal",
-                "value": "normal"
-            },
-            {
-                "label": "Large",
-                "value": "large"
-            }
-        ]
+@media (-moz-bool-pref: "zen.tabs.vertical") {
+    
+    /* Makes essentials transparent (when toggled) */
+    :root:has(#theme-SuperPins[uc-essentials-color-scheme="transparent"]) {
+        .tabbrowser-tab[zen-essential="true"]:not(:hover):not([selected="true"]) .tab-stack .tab-background {
+            background-color: transparent !important;
+        }
     }
-]
+
+    @media (-moz-bool-pref: "zen.view.sidebar-expanded") and (not (-moz-bool-pref: "zen.view.sidebar-expanded.on-hover")) {
+
+        /* Set width of Essentials (Dropdown) */
+        :root:has(#theme-SuperPins[uc-essentials-width="Thin"]) {
+            --essentials-width: 50px;
+        }
+
+        :root:has(#theme-SuperPins[uc-essentials-width="Normal"]) {
+            --essentials-width: 60px;
+        }
+
+        :root:has(#theme-SuperPins[uc-essentials-width="Wide"]) {
+            --essentials-width: 70px;
+        }
+
+        :root:has(#theme-SuperPins[uc-essentials-width="Thin"],
+            #theme-SuperPins[uc-essentials-width="Normal"],
+            #theme-SuperPins[uc-essentials-width="Wide"]) {
+            #zen-essentials-container {
+                grid-template-columns: repeat(auto-fit,
+                        minmax(var(--essentials-width), auto)) !important;
+                min-width: var(--essentials-width) !important;
+            }
+        }
+
+        /* Set margin between Essentials (Dropdown) */
+        :root:has(#theme-SuperPins[uc-essentials-gap="Small"]) {
+            --essentials-gap: 0px;
+        }
+
+        :root:has(#theme-SuperPins[uc-essentials-gap="Normal"]) {
+            --essentials-gap: 2px;
+        }
+
+        :root:has(#theme-SuperPins[uc-essentials-gap="Big"]) {
+            --essentials-gap: 5px;
+        }
+
+        :root:has(#theme-SuperPins[uc-essentials-gap="Small"],
+            #theme-SuperPins[uc-essentials-gap="Normal"],
+            #theme-SuperPins[uc-essentials-gap="Big"]) {
+            #zen-essentials-container {
+                gap: var(--essentials-gap) var(--essentials-gap) !important;
+            }
+        }
+    }
+
+    /* Enables legacy layout for pinned tabs (icon only in grid) */
+    @media (-moz-bool-pref: "uc.pins.legacy-layout") {
+
+        #vertical-pinned-tabs-container .tabbrowser-tab[pinned] .tab-close-button {
+            display: none !important;
+        }
+
+        #vertical-pinned-tabs-container .tabbrowser-tab[pinned] .tab-reset-button {
+            display: none !important;
+        }
+
+        #vertical-pinned-tabs-container .tabbrowser-tab[pinned] .tab-reset-pin-button {
+            display: none !important;
+        }
+
+        #vertical-pinned-tabs-container .tabbrowser-tab[pinned] .tab-label-container {
+            display: none !important;
+        }
+
+        /*disable icon shift when tab was renamed*/
+        #navigator-toolbox[zen-sidebar-expanded="true"] {
+            & #tabbrowser-tabs {
+                & .tabbrowser-tab {
+                    &[zen-pinned-changed="true"]:not([zen-essential])>.tab-stack>.tab-content>.tab-icon-stack {
+                        left: unset !important;
+                    }
+                }
+            }
+        }
+
+        /* Make pinned tabs auto-grow to span full width of row */
+        @media (-moz-bool-pref: "uc.pins.auto-grow") {
+            #vertical-pinned-tabs-container>.zen-workspace-tabs-section>.tabbrowser-tab[pinned] {
+                width: auto !important;
+                min-width: var(--tab-pinned-min-width-expanded) !important;
+                flex: 1 1 auto !important;
+            }
+
+            #vertical-pinned-tabs-container>.zen-workspace-tabs-section {
+                display: flex !important;
+                flex-wrap: wrap !important;
+                flex-direction: row !important;
+            }
+        }
+
+        @media (not (-moz-bool-pref: "uc.pins.auto-grow")) {
+            #vertical-pinned-tabs-container>.zen-workspace-tabs-section {
+                grid-template-columns: repeat(auto-fit, minmax(var(--tab-pinned-min-width-expanded), auto)) !important;
+                display: grid !important;
+            }
+        }
+
+        /*The actual grid layout*/
+        #vertical-pinned-tabs-container>.zen-workspace-tabs-section {
+            padding: 0 var(--zen-toolbox-padding) !important;
+            overflow: hidden !important;
+            padding-bottom: 17px !important;
+            gap: 3px 3px !important;
+        }
+
+        #vertical-pinned-tabs-container>.zen-workspace-tabs-section>.tabbrowser-tab[pinned] {
+            --toolbarbutton-inner-padding: 0;
+        }
+
+        #vertical-pinned-tabs-container > .zen-workspace-tabs-section > * {
+            margin: 0 !important;
+        }
+
+        .vertical-pinned-tabs-container-separator {
+            position: absolute !important;
+            bottom: 7px !important;
+            left: 50% !important;
+            transform: translateX(-50%) !important;
+            width: calc(100% - var(--zen-toolbox-padding) * 2) !important;
+        }
+    }
+
+    /* Make Essentials look more box like */
+    @media (-moz-bool-pref: "uc.essentials.box-like-corners") {
+        .tabbrowser-tab[zen-essential="true"] .tab-stack .tab-background {
+            border-radius: 5px !important;
+        }
+    }
+
+    /* Make Essentials auto-grow to span full width of a row */
+    @media (-moz-bool-pref: "uc.essentials.auto-grow") {
+        .tabbrowser-tab[zen-essential="true"] {
+            width: auto !important;
+            min-width: var(--essentials-width) !important;
+            flex: 1 1 0 !important;
+            box-sizing: border-box !important;
+        }
+
+        #zen-essentials-container {
+            display: flex !important;
+            flex-wrap: wrap !important;
+            flex-direction: row !important;
+            box-sizing: border-box !important;
+            min-width: 0 !important;
+            height: auto !important;
+            width: 100% !important;
+        }
+
+        #navigator-toolbox {
+            min-width: min-content !important;
+        }
+    }
+
+    /* Puts Essentials at the bottom */
+    :has(#theme-SuperPins[uc-essentials-position="bottom"]) {
+        #zen-essentials-container {
+            margin-top: auto !important;
+            order: 999 !important;
+        }
+
+        #zen-tabs-wrapper {
+            margin-bottom: 5px !important;
+        }
+    }
+
+    /* Adds a little bg to the pinned tabs */
+    @media (-moz-bool-pref: "uc.pins.bg") {
+        @media (prefers-color-scheme: light) {
+            :root {
+                --pins-bg-percentage: 40%;
+            }
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --pins-bg-percentage: 7%;
+            }
+        }
+
+        /* background color of pinned tabs in a normal state (not hovered/selected) */
+        .tabbrowser-tab[pinned]:not([zen-essential="true"]) .tab-stack .tab-background {
+            background-color: color-mix(in srgb, white var(--pins-bg-percentage), transparent) !important;
+        }
+
+        /* background color when hovering */
+        .tabbrowser-tab[pinned]:not([zen-essential="true"]):hover .tab-stack .tab-background {
+            background-color: color-mix(in srgb, white calc(var(--pins-bg-percentage) + 3%), transparent) !important;
+        }
+
+        /* background color when selected */
+        .tabbrowser-tab[pinned]:not([zen-essential="true"])[selected="true"] .tab-stack .tab-background,
+        .tabbrowser-tab[pinned]:not([zen-essential="true"])[multiselected="true"] .tab-stack .tab-background {
+            background-color: color-mix(in srgb, white calc(var(--pins-bg-percentage) + 16%), transparent) !important;
+        }
+
+        /* background color when selected and hovering*/
+        .tabbrowser-tab[pinned]:not([zen-essential="true"])[selected="true"]:hover .tab-stack .tab-background,
+        .tabbrowser-tab[pinned]:not([zen-essential="true"])[multiselected="true"]:hover .tab-stack .tab-background {
+            background-color: color-mix(in srgb, white calc(var(--pins-bg-percentage) + 18%), transparent) !important;
+        }
+    }
+
+    /* Adds border to Pins/Essentials (when toggled) */
+    :root:has(#theme-SuperPins[uc-superpins-border="essentials"]) {
+        #zen-essentials-container .tabbrowser-tab[zen-essential="true"] .tab-stack .tab-background {
+            border: 1px solid light-dark(color-mix(in srgb, var(--zen-colors-secondary) 80%, black),
+                    color-mix(in srgb, var(--zen-colors-secondary) 80%, white)) !important;
+        }
+    }
+
+    :root:has(#theme-SuperPins[uc-superpins-border="pins"]) {
+        .tabbrowser-tab[pinned]:not([zen-essential="true"]) .tab-stack .tab-background {
+            border: 1px solid light-dark(color-mix(in srgb, var(--zen-colors-secondary) 80%, black),
+                    color-mix(in srgb, var(--zen-colors-secondary) 80%, white)) !important;
+        }
+    }
+
+    :root:has(#theme-SuperPins[uc-superpins-border="both"]) {
+        .tabbrowser-tab[pinned] .tab-stack .tab-background {
+            border: 1px solid light-dark(color-mix(in srgb, var(--zen-colors-secondary) 80%, black),
+                    color-mix(in srgb, var(--zen-colors-secondary) 80%, white)) !important;
+        }
+    }
+
+    /* Let pinned tabs have the same selected styling as essentials */
+    @media (-moz-bool-pref: "uc.pins.essentials-layout") {
+        #vertical-pinned-tabs-container>.zen-workspace-tabs-section {
+            grid-template-columns: repeat(auto-fit,
+                    minmax(var(--essentials-width), auto)) !important;
+            gap: var(--essentials-gap) var(--essentials-gap) !important;
+        }
+
+        #vertical-pinned-tabs-container>.zen-workspace-tabs-section>.tabbrowser-tab[pinned] {
+            min-width: var(--essentials-width) !important;
+        }
+    }
+    /* pins height */
+  :root:has(#theme-SuperPins[uc-pinned-height="small"]) {
+      #navigator-toolbox[zen-sidebar-expanded="true"]
+          #vertical-pinned-tabs-container:has(tab:not([hidden]))
+          .tabbrowser-tab {
+          height: 40px !important;
+      }
+  }
+  :root:has(#theme-SuperPins[uc-pinned-height="normal"]) {
+      #navigator-toolbox[zen-sidebar-expanded="true"]
+          #vertical-pinned-tabs-container:has(tab:not([hidden]))
+          .tabbrowser-tab {
+          height: 50px !important;
+      }
+  }
+  :root:has(#theme-SuperPins[uc-pinned-height="large"]) {
+      #navigator-toolbox[zen-sidebar-expanded="true"]
+          #vertical-pinned-tabs-container:has(tab:not([hidden]))
+          .tabbrowser-tab {
+          height: 60px !important;
+      }
+  }
+  /* favicon size */
+  :root:has(#theme-SuperPins[uc-favicon-size="small"]) {
+      .tab-throbber,
+      .tab-icon-pending,
+      .tab-icon-image,
+      .tab-sharing-icon-overlay,
+      .tab-icon-overlay {
+          height: 16px !important;
+          width: 16px !important;
+      }
+  }
+  :root:has(#theme-SuperPins[uc-favicon-size="normal"]) {
+      .tab-throbber,
+      .tab-icon-pending,
+      .tab-icon-image,
+      .tab-sharing-icon-overlay,
+      .tab-icon-overlay {
+          height: 18px !important;
+          width: 18px !important;
+      }
+  }
+  :root:has(#theme-SuperPins[uc-favicon-size="large"]) {
+      .tab-throbber,
+      .tab-icon-pending,
+      .tab-icon-image,
+      .tab-sharing-icon-overlay,
+      .tab-icon-overlay {
+          height: 20px !important;
+          width: 20px !important;
+      }
+  }
+  /* workspace icons size */
+  :root:has(#theme-SuperPins[uc-workspace-icon-size="x-small"]) {
+      #zen-workspaces-button {
+          font-size: x-small !important;
+      }
+  }
+  :root:has(#theme-SuperPins[uc-workspace-icon-size="small"]) {
+      #zen-workspaces-button {
+          font-size: small !important;
+      }
+  }
+  :root:has(#theme-SuperPins[uc-workspace-icon-size="medium"]) {
+      #zen-workspaces-button {
+          font-size: medium !important;
+      }
+  }
+  :root:has(#theme-SuperPins[uc-workspace-icon-size="large"]) {
+      #zen-workspaces-button {
+          font-size: large !important;
+      }
+  }
+  /* current workspace icons size */
+  :root:has(#theme-SuperPins[uc-workspace-current-icon-size="small"]) {
+      .zen-current-workspace-indicator .zen-current-workspace-indicator-icon {
+          font-size: 12px !important;
+      }
+  }
+  :root:has(#theme-SuperPins[uc-workspace-current-icon-size="normal"]) {
+      .zen-current-workspace-indicator .zen-current-workspace-indicator-icon {
+          font-size: 14.5px !important;
+      }
+  }
+  :root:has(#theme-SuperPins[uc-workspace-current-icon-size="large"]) {
+      .zen-current-workspace-indicator .zen-current-workspace-indicator-icon {
+          font-size: 16px !important;
+      }
+  }
+
+  /* Default to dimmed icons and text */
+  .tab-icon-image[pending="true"] {
+    opacity: 0.5 !important;
+  }
+
+  .tabbrowser-tab[pending="true"] .tab-text {
+    opacity: 0.5 !important;
+  }
+
+  /* If dim-type is set to icons or none. */
+  :root:has(#theme-SuperPins[uc-tabs-dim-type="icons"], #theme-SuperPins[uc-tabs-dim-type="none"]) {
+      .tabbrowser-tab[pending="true"] .tab-text {
+        opacity: 1 !important;
+      }
+  }
+
+  /* If dim-type is set to none or text. */
+  :root:has(#theme-SuperPins[uc-tabs-dim-type="text"], #theme-SuperPins[uc-tabs-dim-type="none"]) {
+      .tab-icon-image[pending="true"] {
+        opacity: 1 !important;
+      }
+  }
+}
