@@ -164,11 +164,8 @@
             height: auto !important;
         }
 
-        /* The reason Essentials don't have auto-grow yet is that the navigator-toolbox has a min-width of fit-content
-           this results in the flex elements not wrapping but rather abusing this space and constantly increasing
-           the size of the navigator-toolbox */
         #navigator-toolbox {
-            /* min-width: none !important; */
+            min-width: var(--actual-zen-sidebar-width) !important;
         }
     }
 
