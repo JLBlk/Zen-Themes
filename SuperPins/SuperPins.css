@@ -165,12 +165,10 @@
     /* Puts Essentials at the bottom */
     :has(#theme-SuperPins[uc-essentials-position="bottom"]) {
         #zen-essentials-container {
-            margin-top: auto !important;
             order: 999 !important;
-        }
-
-        #zen-tabs-wrapper {
-            margin-bottom: 5px !important;
+            margin-top: auto !important;
+            padding-top: 5px !important;
+            padding-bottom: 2px !important;
         }
     }
 
