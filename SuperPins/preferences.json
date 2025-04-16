@@ -69,6 +69,12 @@
         "disabledOn": []
     },
     {
+        "property": "uc.essentials.auto-grow",
+        "label": "Makes the Essentials auto-grow to fit the full width of its row.",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
         "property": "uc.superpins.border",
         "label": "Add a border around Pins/Essentials",
         "type": "dropdown",
