@@ -75,6 +75,19 @@
         "disabledOn": []
     },
     {
+        "property": "uc.essentials.position",
+        "label": "Select the position of Essentials",
+        "type": "dropdown",
+        "placeholder": "Top",
+        "disabledOn": [],
+        "options": [
+            {
+                "label": "Bottom",
+                "value": "bottom"
+            }
+        ]
+    },
+    {
         "property": "uc.superpins.border",
         "label": "Add a border around Pins/Essentials",
         "type": "dropdown",
