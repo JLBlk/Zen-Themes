@@ -159,13 +159,13 @@
             flex-wrap: wrap !important;
             flex-direction: row !important;
             box-sizing: border-box !important;
-            width: 100% !important;
             min-width: 0 !important;
             height: auto !important;
+            width: 100% !important;
         }
 
         #navigator-toolbox {
-            min-width: var(--actual-zen-sidebar-width) !important;
+            min-width: min-content !important;
         }
     }
 
