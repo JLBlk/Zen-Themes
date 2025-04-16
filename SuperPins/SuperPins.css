@@ -334,11 +334,9 @@
       }
   }
     
-  /* If dim-type is set to none. */
-  :root:has(#theme-SuperPins[uc-tabs-dim-type="both"]) {
-    .tab-icon-image[pending="true"] .tabbrowser-tab[pending="true"] .tab-text {
-      opacity: 1 !important;
-    }
+  /* Ensure that the browser uses SuperPins dim rather than the built-in dim-pending. */
+  .tab-icon-image[pending="true"], .tabbrowser-tab[pending="true"] .tab-text {
+    opacity: 1 !important;
   }
 
   /* If dim-type is set to icons. */
