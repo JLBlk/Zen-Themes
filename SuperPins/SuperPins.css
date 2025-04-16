@@ -110,7 +110,7 @@
         #vertical-pinned-tabs-container>.zen-workspace-tabs-section {
             padding: 0 var(--zen-toolbox-padding) !important;
             overflow: hidden !important;
-            padding-bottom: 15px !important;
+            padding-bottom: 17px !important;
             gap: 3px 3px !important;
         }
 
@@ -124,7 +124,7 @@
 
         .vertical-pinned-tabs-container-separator {
             position: absolute !important;
-            bottom: 5px !important;
+            bottom: 7px !important;
             left: 50% !important;
             transform: translateX(-50%) !important;
             width: calc(100% - var(--zen-toolbox-padding) * 2) !important;
@@ -231,7 +231,6 @@
 
         #vertical-pinned-tabs-container>.zen-workspace-tabs-section>.tabbrowser-tab[pinned] {
             min-width: var(--essentials-width) !important;
-            margin: 0 !important;
         }
     }
     /* pins height */
