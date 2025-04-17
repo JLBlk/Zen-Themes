@@ -241,5 +241,17 @@
                 "value": "large"
             }
         ]
+    },
+    {
+        "property": "mod.superpins.essentials.grid-count",
+        "label": "Number of slots in essentials grid.",
+        "type": "string",
+        "disabledOn": []
+    },
+    {
+        "property": "mod.superpins.pins.grid-count",
+        "label": "Number of slots in pins grid.",
+        "type": "string",
+        "disabledOn": []
     }
 ]
