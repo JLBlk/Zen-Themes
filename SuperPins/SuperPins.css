@@ -157,6 +157,16 @@
             transform: translateX(-50%) !important;
             width: calc(100% - var(--zen-toolbox-padding) * 2) !important;
         }
+
+        :root:has(#theme-SuperPins[uc-tabs-show-separator="never"]) {
+            .vertical-pinned-tabs-container-separator {
+                display: none !important;
+            }
+
+            #vertical-pinned-tabs-container>.zen-workspace-tabs-section:has(> :nth-child(2)) {
+                padding-bottom: 5px !important;
+            }
+        }
     }
 
     /* Make Essentials look more box like */
@@ -435,7 +445,7 @@
     }
   }
 
-  @media (-moz-bool-pref: "uc.tabs.always-show-separator") {
+  :root:has(#theme-SuperPins[uc-tabs-show-separator="always"]) {
     #vertical-pinned-tabs-container>.zen-workspace-tabs-section {
         min-height: 20px !important;
     }
