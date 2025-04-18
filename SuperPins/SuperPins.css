@@ -129,7 +129,7 @@
 
             @media (-moz-bool-pref: "uc.pins.grid-count") {
                 #vertical-pinned-tabs-container>.zen-workspace-tabs-section {
-                    grid-template-columns: repeat(var(--mod-superpins-pins-grid-count), minmax(var(--tab-pinned-min-width-expanded), auto)) !important;
+                    grid-template-columns: repeat(var(auto-fit, --mod-superpins-pins-grid-count), minmax(var(--tab-pinned-min-width-expanded), auto)) !important;
                 }
             }
         }
@@ -297,7 +297,7 @@
 
         @media (-moz-bool-pref: "uc.pins.grid-count") {
             #vertical-pinned-tabs-container>.zen-workspace-tabs-section {
-                grid-template-columns: repeat(var(--mod-superpins-pins-grid-count), minmax(var(--essentials-width), auto)) !important;
+                grid-template-columns: repeat(var(auto-fit, --mod-superpins-pins-grid-count), minmax(var(--essentials-width), auto)) !important;
             }
         }
     }
