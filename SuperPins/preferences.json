@@ -145,6 +145,12 @@
         "disabledOn": []
     },
     {
+        "property": "uc.tabs.always-show-separator",
+        "label": "Always show separator",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
         "property": "uc.tabs.dim-type",
         "label": "Dim the selected parts of a tab when it is unloaded",
         "type": "dropdown",
