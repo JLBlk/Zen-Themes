@@ -137,9 +137,10 @@
         /*The actual grid layout*/
         #vertical-pinned-tabs-container>.zen-workspace-tabs-section:has(> :nth-child(2)) {
             padding: 0 var(--zen-toolbox-padding) !important;
-            overflow: hidden !important;
+            overflow: visible !important;
             padding-bottom: 17px !important;
             gap: 3px 3px !important;
+            max-width: calc(100% - var(--zen-toolbox-padding) * 2) !important;
         }
 
         #vertical-pinned-tabs-container>.zen-workspace-tabs-section>.tabbrowser-tab[pinned] {
