@@ -434,4 +434,10 @@
         text-decoration: line-through !important;
     }
   }
+
+  @media (-moz-bool-pref: "uc.tabs.always-show-separator") {
+    #vertical-pinned-tabs-container>.zen-workspace-tabs-section {
+        min-height: 20px !important;
+    }
+  }
 }
