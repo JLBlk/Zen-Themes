@@ -104,8 +104,9 @@
             }
 
             @media (-moz-bool-pref: "uc.pins.grid-count") {
+                /* Logic for pinned tabs that have auto-grow and grid-count. Must use +1 to fix bug. */
                 #vertical-pinned-tabs-container>.zen-workspace-tabs-section>.tabbrowser-tab[pinned] {
-                    width: calc(100% / var(--mod-superpins-pins-grid-count)) !important;
+                    width: calc(100% / (var(--mod-superpins-pins-grid-count) + 1)) !important;
                 }
             }
 
@@ -179,7 +180,7 @@
         @media (-moz-bool-pref: "uc.essentials.grid-count") {
             /* For auto-grow with grid-count. must use +1 to fix a bug */
             .tabbrowser-tab[zen-essential="true"] {
-                width: calc(100% / calc(var(--mod-superpins-essentials-grid-count) + 1)) !important;
+                width: calc(100% / (var(--mod-superpins-essentials-grid-count) + 1)) !important;
             }
         }
 
