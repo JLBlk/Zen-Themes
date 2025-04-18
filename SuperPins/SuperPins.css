@@ -1,4 +1,8 @@
 @media (-moz-bool-pref: "zen.tabs.vertical") {
+    /* Prevents stuff from being clipped off from bottom of Essentials */
+    #zen-essentials-container {
+        overflow: visible !important;
+    }
     
     /* Makes essentials transparent (when toggled) */
     :root:has(#theme-SuperPins[uc-essentials-color-scheme="transparent"]) {
