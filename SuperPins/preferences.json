@@ -145,10 +145,26 @@
         "disabledOn": []
     },
     {
-        "property": "uc.tabs.always-show-separator",
-        "label": "Always show separator",
-        "type": "checkbox",
-        "disabledOn": []
+        "property": "uc.tabs.show-separator",
+        "label": "When to display separator",
+        "type": "dropdown",
+        "disabledOn": [],
+        "placeholder": "Default",
+        "defaultValue": "sometimes",
+        "options": [
+            {
+                "label": "Never",
+                "value": "never"
+            },
+            {
+                "label": "Sometimes",
+                "value": "sometimes"
+            },
+            {
+                "label": "Always",
+                "value": "always"
+            }
+        ]
     },
     {
         "property": "uc.tabs.dim-type",
