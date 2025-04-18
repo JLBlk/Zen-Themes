@@ -249,6 +249,26 @@
         ]
     },
     {
+        "property": "uc.essentials.bottom-margin",
+        "label": "Margin below Essentials",
+        "type": "dropdown",
+        "placeholder": "Default",
+        "options": [
+            {
+                "label": "Small",
+                "value": "small"
+            },
+            {
+                "label": "Normal",
+                "value": "normal"
+            },
+            {
+                "label": "Large",
+                "value": "large"
+            }
+        ]
+    },
+    {
         "property": "uc.essentials.grid-count",
         "label": "Makes Essentials have a limited amount of columns",
         "type": "checkbox",
