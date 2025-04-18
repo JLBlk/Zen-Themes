@@ -104,7 +104,7 @@
             }
 
             @media (-moz-bool-pref: "uc.pins.grid-count") {
-                /* Logic for pinned tabs that have auto-grow and grid-count. Must use +1 to fix bug. */
+                /* Logic for pinned tabs that have auto-grow and grid-count. Must use +1 to fix */
                 #vertical-pinned-tabs-container>.zen-workspace-tabs-section>.tabbrowser-tab[pinned] {
                     width: calc(100% / (var(--mod-superpins-pins-grid-count) + 1)) !important;
                 }
@@ -374,6 +374,28 @@
   :root:has(#theme-SuperPins[uc-workspace-current-icon-size="large"]) {
       .zen-current-workspace-indicator .zen-current-workspace-indicator-icon {
           font-size: 16px !important;
+      }
+  }
+
+  /* prevents bottom portion of essentials element from being cut off. */
+  #zen-essentials-container {
+    padding: unset !important;
+  }
+
+  /* margin below essentials */
+  :root:has(#theme-Superpins[uc-essentials-bottom-margin="small"]) {
+      #zen-essentials-container {
+          margin-bottom: 3px !important;
+      }
+  }
+  :root:has(#theme-SuperPins[uc-essentials-bottom-margin="normal"]) {
+      #zen-essentials-container {
+          margin-bottom: 8px !important;
+      }
+  }
+  :root:has(#theme-SuperPins[uc-essentials-bottom-margin="large"]) {
+      #zen-essentials-container {
+          margin-bottom: 12px !important;
       }
   }
 
