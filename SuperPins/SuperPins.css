@@ -451,4 +451,38 @@
         min-height: 20px !important;
     }
   }
+
+  @media (-moz-bool-pref: "uc.pins.stay-at-top") {
+      #zen-browser-tabs-container {
+          height: 100% !important;
+      }
+      
+      #tabbrowser-arrowscrollbox {
+          height: 100% !important;
+      }
+      
+      #tabbrowser-arrowscrollbox > .zen-workspace-tabs-section {
+          overflow-y: auto !important;
+          /* Calculate the height of the bottom workspace section. */
+          max-height: calc(100% - 43px) !important;
+          box-sizing: border-box !important;
+          padding-bottom: 60px !important;
+      }
+      
+      /* In case workspace indicator is not visible. */
+      @media (not (-moz-bool-pref: "zen.workspaces.show-workspace-indicator")) {
+          #tabbrowser-arrowscrollbox > .zen-workspace-tabs-section {
+              max-height: calc(100% - 5px) !important;
+          }
+      }
+      
+      #zen-tabs-wrapper {
+          overflow: hidden !important;
+      }
+      
+      /* Ensure tab-groups never shrink. */
+      tab-group {
+          flex: 0 0 auto !important;
+      }
+  }
 }
