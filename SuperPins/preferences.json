@@ -139,6 +139,40 @@
         "disabledOn": []
     },
     {
+        "property": "uc.pins.stay-at-top",
+        "label": "Keep pinned tabs at the top when scrolling",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.tabs.strikethrough-on-pending",
+        "label": "Adds a strikethrough effect on unloaded tabs",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "uc.tabs.show-separator",
+        "label": "When to display separator",
+        "type": "dropdown",
+        "disabledOn": [],
+        "placeholder": "Default",
+        "defaultValue": "sometimes",
+        "options": [
+            {
+                "label": "Never",
+                "value": "never"
+            },
+            {
+                "label": "Sometimes",
+                "value": "sometimes"
+            },
+            {
+                "label": "Always",
+                "value": "always"
+            }
+        ]
+    },
+    {
         "property": "uc.tabs.dim-type",
         "label": "Dim the selected parts of a tab when it is unloaded",
         "type": "dropdown",
@@ -241,5 +275,51 @@
                 "value": "large"
             }
         ]
+    },
+    {
+        "property": "uc.essentials.bottom-margin",
+        "label": "Margin below Essentials",
+        "type": "dropdown",
+        "placeholder": "Default",
+        "options": [
+            {
+                "label": "Small",
+                "value": "small"
+            },
+            {
+                "label": "Normal",
+                "value": "normal"
+            },
+            {
+                "label": "Large",
+                "value": "large"
+            }
+        ]
+    },
+    {
+        "property": "uc.essentials.grid-count",
+        "label": "Makes Essentials have a limited amount of columns",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "mod.superpins.essentials.grid-count",
+        "label": "Number of slots in essentials grid.",
+        "type": "string",
+        "disabledOn": [],
+        "defaultValue": "1"
+    },
+    {
+        "property": "uc.pins.grid-count",
+        "label": "Makes pinned tabs have a limited amount of columns",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "mod.superpins.pins.grid-count",
+        "label": "Number of slots in pins grid.",
+        "type": "string",
+        "disabledOn": [],
+        "defaultValue": "1"
     }
 ]
