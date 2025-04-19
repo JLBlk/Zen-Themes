@@ -139,6 +139,12 @@
         "disabledOn": []
     },
     {
+        "property": "uc.pins.stay-at-top",
+        "label": "Keep pinned tabs at the top when scrolling",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
         "property": "uc.tabs.strikethrough-on-pending",
         "label": "Adds a strikethrough effect on unloaded tabs",
         "type": "checkbox",
