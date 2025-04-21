@@ -1,9 +1,27 @@
 [
     {
         "property": "uc.urlbar.border-radius",
-        "label": "Adjusts the border radius of the url bar and its items",
-        "type": "checkbox",
-        "disabledOn": []
+        "label": "Adjusts the border radius of the url bar and its items to a certain degree",
+        "type": "dropdown",
+        "disabledOn": [],
+        "options": [
+            {
+                "label": "Small",
+                "value": "small"
+            },
+            {
+                "label": "Medium",
+                "value": "medium"
+            },
+            {
+                "label": "Large",
+                "value": "large"
+            },
+            {
+                "label": "Extra Large",
+                "value": "xlarge"
+            }
+        ]
     },
     {
         "property": "uc.urltext.center",
