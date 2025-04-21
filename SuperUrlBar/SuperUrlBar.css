@@ -10,7 +10,7 @@
         
   /* Border radius on hover */
   #urlbar .urlbar-page-action, #urlbar #tracking-protection-icon-container, #urlbar:not([breakout-extend="true"]) #identity-box:is(:not(.chromeUI), [pageproxystate="invalid"]) #identity-icon-box {
-    border-radius: 20px !important;;
+    border-radius: 20px !important;
   }
         
   /* Border radius of boxes on the left */
@@ -123,8 +123,9 @@
 
 /* Adds a border to the url bar when toggled */
 @media (-moz-bool-pref: "uc.urlbar.border") {
-  #urlbar {
-    border: 1px solid var(--zen-colors-border) !important;
+  #urlbar-background {
+    border: 1px solid light-dark(color-mix(in srgb, var(--zen-colors-secondary) 80%, black),
+                    color-mix(in srgb, var(--zen-colors-secondary) 80%, white)) !important;
   }
 }
 
