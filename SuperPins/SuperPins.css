@@ -463,6 +463,7 @@
       
       #tabbrowser-arrowscrollbox > .zen-workspace-tabs-section {
           overflow-y: auto !important;
+          overflow-x: hidden !important;
           /* Calculate the height of the bottom workspace section. */
           max-height: calc(100% - 43px) !important;
           box-sizing: border-box !important;
