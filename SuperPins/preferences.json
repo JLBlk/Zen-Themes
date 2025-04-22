@@ -145,12 +145,6 @@
         "disabledOn": []
     },
     {
-        "property": "uc.tabs.strikethrough-on-pending",
-        "label": "Adds a strikethrough effect on unloaded tabs",
-        "type": "checkbox",
-        "disabledOn": []
-    },
-    {
         "property": "uc.tabs.show-separator",
         "label": "When to display separator",
         "type": "dropdown",
@@ -191,6 +185,12 @@
                 "value": "text"
             }
         ]
+    },
+    {
+        "property": "uc.tabs.strikethrough-on-pending",
+        "label": "Adds a strikethrough effect on unloaded tabs",
+        "type": "checkbox",
+        "disabledOn": []
     },
     {
         "property": "uc.pinned.height",
