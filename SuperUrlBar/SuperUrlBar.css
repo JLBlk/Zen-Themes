@@ -167,102 +167,79 @@
 
   @media (-moz-bool-pref: "uc.urlbar.icon.zoom.removed") {
     #urlbar:hover #urlbar-zoom-button {
-      position: relative;
-      opacity: 1;
+      display: block !important;
     } 
   }
   @media (-moz-bool-pref: "uc.urlbar.icon.shield.removed") {
     #urlbar:hover #tracking-protection-icon-container, #tracking-protection-icon-container[open="true"] {
-      position: relative;
-      opacity: 1;
+      display: block !important;
     } 
   }
   @media (-moz-bool-pref: "uc.urlbar.icon.bookmark.removed") {
     #urlbar:hover #star-button-box, #star-button-box[open="true"] {
-      position: relative;
-      opacity: 1;
+      display: block !important;
     } 
   }
   @media (-moz-bool-pref: "uc.urlbar.icon.reader-mode.removed") {
     #urlbar:hover #reader-mode-button {
-      position: relative;
-      opacity: 1;
+      display: block !important;
     } 
   }
   @media (-moz-bool-pref: "uc.urlbar.icon.pip.removed") {
     #urlbar:hover #picture-in-picture-button {
-      position: relative;
-      opacity: 1;
+      display: block !important;
     } 
   }
   @media (-moz-bool-pref: "uc.urlbar.icon.split-view.removed") {
     #urlbar:hover #zen-split-views-box {
-      position: relative;
-      opacity: 1;
+      display: block !important;
     }
   }
   @media (-moz-bool-pref: "uc.urlbar.icon.left-side.removed") {
     #urlbar:hover #identity-box {
-      position: relative;
-      opacity: 1;
+      display: block !important;
     } 
   }
+}
+
+/* Brings back the tracking protection icon */
+#urlbar[open] #tracking-protection-icon-container {
+  display: block !important;
 }
 
 /* Removes certain buttons from the url bar (when toggled) */
 @media (-moz-bool-pref: "uc.urlbar.icon.zoom.removed") {
   #urlbar-zoom-button {
-    opacity: 0;
-    pointer-events: var(--pointer-events) !important;
-    position: var(--position-var);
-    transition: 100ms linear, opacity 200ms linear;
+    display: none !important;
   }
 }
 @media (-moz-bool-pref: "uc.urlbar.icon.shield.removed") {
   #tracking-protection-icon-container {
-    opacity: 0;
-    pointer-events: var(--pointer-events) !important;
-    position: var(--position-var);
-    transition: 100ms linear, opacity 200ms linear;
+    display: none !important;
   }
 }
 @media (-moz-bool-pref: "uc.urlbar.icon.bookmark.removed") {
   #star-button-box {
-    opacity: 0;
-    pointer-events: var(--pointer-events) !important;
-    position: var(--position-var);
-    transition: 100ms linear, opacity 200ms linear;
+    display: none !important;
   }
 }
 @media (-moz-bool-pref: "uc.urlbar.icon.reader-mode.removed") {
   #reader-mode-button {
-    opacity: 0;
-    pointer-events: var(--pointer-events) !important;
-    position: var(--position-var);
-    transition: 100ms linear, opacity 200ms linear;
+    display: none !important;
   }
 }
 @media (-moz-bool-pref: "uc.urlbar.icon.pip.removed") {
   #picture-in-picture-button {
-    opacity: 0;
-    pointer-events: var(--pointer-events) !important;
-    position: var(--position-var);
-    transition: 100ms linear, opacity 200ms linear;
+    display: none !important;
   }
 }
 @media (-moz-bool-pref: "uc.urlbar.icon.split-view.removed") {
   #zen-split-views-box {
-    opacity: 0;
-    pointer-events: var(--pointer-events) !important;
-    position: var(--position-var);
-    transition: 100ms linear, opacity 200ms linear;
+    display: none !important;
   }
 }
 @media (-moz-bool-pref: "uc.urlbar.icon.left-side.removed") {
   #identity-box {
-    opacity: 0;
-    pointer-events: var(--pointer-events) !important;
-    position: var(--position-var);
-    transition: 100ms linear, opacity 200ms linear;
+    display: none !important;
   }
 }
