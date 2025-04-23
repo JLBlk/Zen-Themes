@@ -145,24 +145,30 @@
         "disabledOn": []
     },
     {
+        "property": "uc.tabs.strikethrough-on-pending",
+        "label": "Adds a strikethrough effect on unloaded tabs",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
         "property": "uc.tabs.show-separator",
         "label": "When to display separator",
         "type": "dropdown",
         "disabledOn": [],
         "placeholder": "Default",
-        "defaultValue": "sometimes",
+        "defaultValue": "pinned-shown",
         "options": [
             {
                 "label": "Never",
                 "value": "never"
             },
             {
-                "label": "Sometimes",
-                "value": "sometimes"
+                "label": "When there are pinned tabs only",
+                "value": "pinned-shown"
             },
             {
-                "label": "Always",
-                "value": "always"
+                "label": "When there are Essentials and/or pinned tabs",
+                "value": "essentials-shown"
             }
         ]
     },
@@ -185,12 +191,6 @@
                 "value": "text"
             }
         ]
-    },
-    {
-        "property": "uc.tabs.strikethrough-on-pending",
-        "label": "Adds a strikethrough effect on unloaded tabs",
-        "type": "checkbox",
-        "disabledOn": []
     },
     {
         "property": "uc.pinned.height",
@@ -259,26 +259,6 @@
     {
         "property": "uc.workspace.current.icon.size",
         "label": "Size of current workspace indicator icon",
-        "type": "dropdown",
-        "placeholder": "Default",
-        "options": [
-            {
-                "label": "Small",
-                "value": "small"
-            },
-            {
-                "label": "Normal",
-                "value": "normal"
-            },
-            {
-                "label": "Large",
-                "value": "large"
-            }
-        ]
-    },
-    {
-        "property": "uc.essentials.bottom-margin",
-        "label": "Margin below Essentials",
         "type": "dropdown",
         "placeholder": "Default",
         "options": [
