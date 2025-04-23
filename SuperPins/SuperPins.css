@@ -397,20 +397,26 @@
     padding: unset !important;
   }
 
-  /* margin below essentials */
-  :root:has(#theme-Superpins[uc-essentials-bottom-margin="small"]) {
-      #zen-essentials-container {
-          margin-bottom: 3px !important;
+  /* Increase margin below Essentials in case the workspace indicator is not visible. */
+  @media (not (-moz-bool-pref: "zen.workspaces.show-workspace-indicator")) {
+      :root:has(#theme-SuperPins[uc-tabs-show-separator="essentials-shown"]) {
+          #zen-essentials-container:has(~ #zen-tabs-wrapper #zen-browser-tabs-container #vertical-pinned-tabs-container .zen-workspace-tabs-section[active="true"] .tabbrowser-tab) {
+              margin-bottom: 8px !important;
+          }
+
+          #zen-essentials-container:has(> :nth-child(1)) ~ #zen-tabs-wrapper #zen-browser-tabs-container #vertical-pinned-tabs-container>.zen-workspace-tabs-section {
+              min-height: 20px !important;
+          }
+
+          #zen-essentials-container:has(> :nth-child(1)) ~ #zen-tabs-wrapper #zen-browser-tabs-container #vertical-pinned-tabs-container>.zen-workspace-tabs-section .vertical-pinned-tabs-container-separator {
+              max-height: unset !important;
+          }
       }
-  }
-  :root:has(#theme-SuperPins[uc-essentials-bottom-margin="normal"]) {
-      #zen-essentials-container {
-          margin-bottom: 8px !important;
-      }
-  }
-  :root:has(#theme-SuperPins[uc-essentials-bottom-margin="large"]) {
-      #zen-essentials-container {
-          margin-bottom: 12px !important;
+
+      :root:not(:has(#theme-SuperPins[uc-tabs-show-separator="essentials-shown"])) {
+          #zen-essentials-container {
+              margin-bottom: 8px !important;
+          }
       }
   }
 
@@ -446,44 +452,38 @@
     }
   }
 
-  :root:has(#theme-SuperPins[uc-tabs-show-separator="always"]) {
-    #vertical-pinned-tabs-container>.zen-workspace-tabs-section {
-        min-height: 20px !important;
-    }
-  }
-
   @media (-moz-bool-pref: "uc.pins.stay-at-top") {
-      #zen-browser-tabs-container {
-          height: 100% !important;
-      }
-      
-      #tabbrowser-arrowscrollbox {
-          height: 100% !important;
-      }
-      
-      #tabbrowser-arrowscrollbox > .zen-workspace-tabs-section {
-          overflow-y: auto !important;
-          overflow-x: hidden !important;
-          /* Calculate the height of the bottom workspace section. */
-          max-height: calc(100% - 43px) !important;
-          box-sizing: border-box !important;
-          padding-bottom: 60px !important;
-      }
-      
-      /* In case workspace indicator is not visible. */
-      @media (not (-moz-bool-pref: "zen.workspaces.show-workspace-indicator")) {
-          #tabbrowser-arrowscrollbox > .zen-workspace-tabs-section {
-              max-height: calc(100% - 5px) !important;
-          }
-      }
-      
-      #zen-tabs-wrapper {
-          overflow: hidden !important;
-      }
-      
-      /* Ensure tab-groups never shrink. */
-      tab-group {
-          flex: 0 0 auto !important;
-      }
+    #zen-browser-tabs-container {
+        height: 100% !important;
+    }
+    
+    #tabbrowser-arrowscrollbox {
+        height: 100% !important;
+    }
+    
+    #tabbrowser-arrowscrollbox > .zen-workspace-tabs-section {
+        overflow-y: auto !important;
+        overflow-x: hidden !important;
+        /* Calculate the height of the bottom workspace section. */
+        max-height: calc(100% - 43px) !important;
+        box-sizing: border-box !important;
+        padding-bottom: 60px !important;
+    }
+    
+    /* In case workspace indicator is not visible. */
+    @media (not (-moz-bool-pref: "zen.workspaces.show-workspace-indicator")) {
+        #tabbrowser-arrowscrollbox > .zen-workspace-tabs-section {
+            max-height: calc(100% - 5px) !important;
+        }
+    }
+    
+    #zen-tabs-wrapper {
+        overflow: hidden !important;
+    }
+    
+    /* Ensure tab-groups never shrink. */
+    tab-group {
+        flex: 0 0 auto !important;
+    }
   }
 }
