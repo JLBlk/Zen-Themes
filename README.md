@@ -1,6 +1,3 @@
-> [!Note]
-> This repository is no longer actively mantained. However development on the "SuperPins" Mod will continue thanks to [@CosmoCreeper](https://github.com/CosmoCreeper) in the following repository: https://github.com/CosmoCreeper/Zen-Themes. Be sure to give him a star if you like the mod!
-
 # Zen Themes
 
 A personal collection of my CSS Themes 🎨 for the [Zen Browser](https://zen-browser.app/).
