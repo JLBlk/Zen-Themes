@@ -329,7 +329,6 @@
     /* favicon size */
     :root:has(#theme-SuperPins[uc-favicon-size="small"]) {
 
-        .tab-throbber,
         .tab-icon-pending,
         .tab-icon-image,
         .tab-sharing-icon-overlay,
@@ -337,11 +336,12 @@
             height: 16px !important;
             width: 16px !important;
         }
+
+        /* No need to scale tab throbber as it is same size. */
     }
 
     :root:has(#theme-SuperPins[uc-favicon-size="normal"]) {
 
-        .tab-throbber,
         .tab-icon-pending,
         .tab-icon-image,
         .tab-sharing-icon-overlay,
@@ -349,17 +349,24 @@
             height: 18px !important;
             width: 18px !important;
         }
+
+        .tab-throbber[busy] {
+            transform: scale(1.125) !important;
+        }
     }
 
     :root:has(#theme-SuperPins[uc-favicon-size="large"]) {
 
-        .tab-throbber,
         .tab-icon-pending,
         .tab-icon-image,
         .tab-sharing-icon-overlay,
         .tab-icon-overlay {
             height: 20px !important;
             width: 20px !important;
+        }
+
+        .tab-throbber[busy] {
+            transform: scale(1.25) !important;
         }
     }
 
@@ -502,6 +509,18 @@
         /* Ensure tab-groups never shrink. */
         tab-group {
             flex: 0 0 auto !important;
+        }
+    }
+
+    @media (-moz-bool-pref: "uc.pins.active-bg") {
+        .zen-workspace-tabs-section .tabbrowser-tab[pinned][selected="true"] .tab-stack .tab-background {
+            background-color: var(--mod-superpins-pins-active-bg) !important;
+            opacity: 1 !important;
+        }
+
+        .zen-workspace-tabs-section .tabbrowser-tab[pinned][selected="true"]:hover .tab-stack .tab-background {
+            opacity: 0.8 !important;
+            background-color: var(--mod-superpins-pins-active-bg) !important;
         }
     }
 }
