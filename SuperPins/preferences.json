@@ -145,6 +145,18 @@
         "disabledOn": []
     },
     {
+        "property": "uc.pins.active-bg",
+        "label": "Adds a custom background to active pinned tabs",
+        "type": "checkbox",
+        "disabledOn": []
+    },
+    {
+        "property": "mod.superpins.pins.active-bg",
+        "label": "Custom background for active pinned tabs.",
+        "type": "string",
+        "disabledOn": []
+    },
+    {
         "property": "uc.tabs.strikethrough-on-pending",
         "label": "Adds a strikethrough effect on unloaded tabs",
         "type": "checkbox",
