@@ -350,7 +350,7 @@
             width: 18px !important;
         }
 
-        .tab-throbber[busy] {
+        .tab-throbber {
             transform: scale(1.125) !important;
         }
     }
@@ -365,7 +365,7 @@
             width: 20px !important;
         }
 
-        .tab-throbber[busy] {
+        .tab-throbber {
             transform: scale(1.25) !important;
         }
     }
