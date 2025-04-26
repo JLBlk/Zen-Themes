@@ -1,30 +1,35 @@
 /* Adjust border radius of url bar and its elements */
-@media (-moz-bool-pref: "uc.urlbar.border-radius") {
-  #urlbar {
-    border-radius: 20px !important;
-  }
-          
-  #notification-popup-box {
-    border-radius: 20px !important;
-  }
-        
-  /* Border radius on hover */
-  #urlbar .urlbar-page-action, #urlbar #tracking-protection-icon-container, #urlbar:not([breakout-extend="true"]) #identity-box:is(:not(.chromeUI), [pageproxystate="invalid"]) #identity-icon-box {
-    border-radius: 20px !important;;
-  }
-        
-  /* Border radius of boxes on the left */
-  #identity-box:has(#identity-permission-box:is([hasPermissions], [hasSharingIcon])):not([pageproxystate="invalid"]) #identity-icon-box {
-    border-top-left-radius: 20px !important;
-    border-bottom-left-radius: 20px !important;
-    border-top-right-radius: 0 !important;
-    border-bottom-right-radius: 0 !important;
-  }
+:root:has(#theme-Super-Url-Bar[uc-urlbar-border-radius="small"]) {
+  --urlbar-border-radius: 4px;
+}
+:root:has(#theme-Super-Url-Bar[uc-urlbar-border-radius="medium"]) {
+  --urlbar-border-radius: 8px;
+}
+:root:has(#theme-Super-Url-Bar[uc-urlbar-border-radius="large"]) {
+  --urlbar-border-radius: 14px;
+}
+:root:has(#theme-Super-Url-Bar[uc-urlbar-border-radius="xlarge"]) {
+  --urlbar-border-radius: 20px;
+}
 
-  /* Extensions or similar */
-  #urlbar:not([breakout-extend="true"]) #identity-box.chromeUI:not([pageproxystate="invalid"]) #identity-icon-box {
-    border-radius: 20px 20px 20px 20px !important;
-  }
+:root:has(#theme-Super-Url-Bar[uc-urlbar-border-radius="small"],
+          #theme-Super-Url-Bar[uc-urlbar-border-radius="medium"],
+          #theme-Super-Url-Bar[uc-urlbar-border-radius="large"],
+          #theme-Super-Url-Bar[uc-urlbar-border-radius="xlarge"]) {
+    #urlbar, #urlbar-background, #notification-popup-box, #urlbar .urlbar-page-action, #urlbar #tracking-protection-icon-container,
+    #urlbar:not([breakout-extend="true"]) #identity-box:is(:not(.chromeUI), [pageproxystate="invalid"]) #identity-icon-box,
+    #urlbar:not([breakout-extend="true"]) #identity-box.chromeUI:not([pageproxystate="invalid"]) #identity-icon-box,
+    .identity-box-button {
+      border-radius: var(--urlbar-border-radius) !important;
+    }
+          
+    /* Border radius of boxes on the left */
+    #identity-box:has(#identity-permission-box:is([hasPermissions], [hasSharingIcon])):not([pageproxystate="invalid"]) #identity-icon-box {
+      border-top-left-radius: var(--urlbar-border-radius) !important;
+      border-bottom-left-radius: var(--urlbar-border-radius) !important;
+      border-top-right-radius: 0 !important;
+      border-bottom-right-radius: 0 !important;
+    }
 }
 
 /* Centers the url text when enabled in dropdown: 1.Option: Centers the text unless url bar is focused; 2.Option: Centers the text always*/
@@ -80,10 +85,10 @@
     pointer-events: none;
   
     width: 200vw;
-    height: 100vh;
+    height: 200vh;
   
-    top: 0px;
-    left: -50px;
+    top: -100vh;
+    left: -100vw;
   
     background-color: rgba(0, 0, 0, 0.3);
     backdrop-filter: blur(var(--blur-intensity));
@@ -123,8 +128,9 @@
 
 /* Adds a border to the url bar when toggled */
 @media (-moz-bool-pref: "uc.urlbar.border") {
-  #urlbar {
-    border: 1px solid var(--zen-colors-border) !important;
+  #urlbar-background {
+    border: 1px solid light-dark(color-mix(in srgb, var(--zen-colors-secondary) 80%, black),
+                    color-mix(in srgb, var(--zen-colors-secondary) 80%, white)) !important;
   }
 }
 
@@ -161,102 +167,79 @@
 
   @media (-moz-bool-pref: "uc.urlbar.icon.zoom.removed") {
     #urlbar:hover #urlbar-zoom-button {
-      position: relative;
-      opacity: 1;
+      display: block !important;
     } 
   }
   @media (-moz-bool-pref: "uc.urlbar.icon.shield.removed") {
     #urlbar:hover #tracking-protection-icon-container, #tracking-protection-icon-container[open="true"] {
-      position: relative;
-      opacity: 1;
+      display: block !important;
     } 
   }
   @media (-moz-bool-pref: "uc.urlbar.icon.bookmark.removed") {
     #urlbar:hover #star-button-box, #star-button-box[open="true"] {
-      position: relative;
-      opacity: 1;
+      display: block !important;
     } 
   }
   @media (-moz-bool-pref: "uc.urlbar.icon.reader-mode.removed") {
     #urlbar:hover #reader-mode-button {
-      position: relative;
-      opacity: 1;
+      display: block !important;
     } 
   }
   @media (-moz-bool-pref: "uc.urlbar.icon.pip.removed") {
     #urlbar:hover #picture-in-picture-button {
-      position: relative;
-      opacity: 1;
+      display: block !important;
     } 
   }
   @media (-moz-bool-pref: "uc.urlbar.icon.split-view.removed") {
     #urlbar:hover #zen-split-views-box {
-      position: relative;
-      opacity: 1;
+      display: block !important;
     }
   }
   @media (-moz-bool-pref: "uc.urlbar.icon.left-side.removed") {
     #urlbar:hover #identity-box {
-      position: relative;
-      opacity: 1;
+      display: block !important;
     } 
   }
+}
+
+/* Brings back the tracking protection icon */
+#urlbar[open] #tracking-protection-icon-container {
+  display: block !important;
 }
 
 /* Removes certain buttons from the url bar (when toggled) */
 @media (-moz-bool-pref: "uc.urlbar.icon.zoom.removed") {
   #urlbar-zoom-button {
-    opacity: 0;
-    pointer-events: var(--pointer-events) !important;
-    position: var(--position-var);
-    transition: 100ms linear, opacity 200ms linear;
+    display: none !important;
   }
 }
 @media (-moz-bool-pref: "uc.urlbar.icon.shield.removed") {
   #tracking-protection-icon-container {
-    opacity: 0;
-    pointer-events: var(--pointer-events) !important;
-    position: var(--position-var);
-    transition: 100ms linear, opacity 200ms linear;
+    display: none !important;
   }
 }
 @media (-moz-bool-pref: "uc.urlbar.icon.bookmark.removed") {
   #star-button-box {
-    opacity: 0;
-    pointer-events: var(--pointer-events) !important;
-    position: var(--position-var);
-    transition: 100ms linear, opacity 200ms linear;
+    display: none !important;
   }
 }
 @media (-moz-bool-pref: "uc.urlbar.icon.reader-mode.removed") {
   #reader-mode-button {
-    opacity: 0;
-    pointer-events: var(--pointer-events) !important;
-    position: var(--position-var);
-    transition: 100ms linear, opacity 200ms linear;
+    display: none !important;
   }
 }
 @media (-moz-bool-pref: "uc.urlbar.icon.pip.removed") {
   #picture-in-picture-button {
-    opacity: 0;
-    pointer-events: var(--pointer-events) !important;
-    position: var(--position-var);
-    transition: 100ms linear, opacity 200ms linear;
+    display: none !important;
   }
 }
 @media (-moz-bool-pref: "uc.urlbar.icon.split-view.removed") {
   #zen-split-views-box {
-    opacity: 0;
-    pointer-events: var(--pointer-events) !important;
-    position: var(--position-var);
-    transition: 100ms linear, opacity 200ms linear;
+    display: none !important;
   }
 }
 @media (-moz-bool-pref: "uc.urlbar.icon.left-side.removed") {
   #identity-box {
-    opacity: 0;
-    pointer-events: var(--pointer-events) !important;
-    position: var(--position-var);
-    transition: 100ms linear, opacity 200ms linear;
+    display: none !important;
   }
 }
